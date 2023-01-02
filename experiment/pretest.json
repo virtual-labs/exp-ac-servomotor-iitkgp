@@ -2,38 +2,107 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Basically what is an AC servo motor?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Two phase induction Motor",
+        "b": "DC shunt Motor",
+        "c": "Hysteresis Motor",
+        "d": "DC Compound Motor"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "You have chosen right answer ",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen wrong answer"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "One of the basic requirement of this servo motor is that it have to produce high torque at all",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Loads",
+        "b": "Frequencies",
+        "c": "Speed",
+        "d": "Voltages"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "You have chosen wrong answer ",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen right answer",
+        "d": "You have chosen wrong answer"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Two stator windings of ac servomotor are oriented _____",
+      "answers": {
+        "a": "90 degree (mechanical)apart",
+        "b": "90 degree (electrical)apart",
+        "c": "180 degree (mechanical)apart",
+        "d": "180 degree (electrical)apart"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer ",
+        "b": "You have chosen right answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen wrong answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Servomotor is a closed loop feedback control system.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+        
+      },
+      "explanations": {
+        "a": "You have chosen right answer ",
+        "b": "You have chosen wrong answer"
+        
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Servomotors are usually rated in ________.",
+      "answers": {
+        "a": "KW",
+        "b": "torque/hour",
+        "c": "KVA",
+        "d": "Kg/cm"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer ",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen right answer"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "A servomechanism is a feedback control system used to control",
+      "answers": {
+        "a": "Position",
+        "b": "Velocity",
+        "c": "Acceleration",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer ",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen right answer"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
     }
+
+
   ]
 }
