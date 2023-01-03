@@ -58,6 +58,6 @@ J = movement of inertia of rotor and disc
 
 F = coefficient of viscous friction
 
-$$ T_L \ = \ load torque $$	
+$$ T_L \ = \ load \ torque $$	
 						
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								
