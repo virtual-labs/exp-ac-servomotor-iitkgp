@@ -52,39 +52,12 @@ The drag-cup rotor can be described as a special from of squirral-cage rotor in 
 
 $$ T_{m}=T_{m0}+\frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}(E-E_{0})+\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}(\dot{\theta}-\dot{\theta}_{0}).......(1) $$
 
-
 Where the higher order terms in the Taylor series expansion are neglected. Let
 
-J =	movement of inertia of rotor and disc
+J = movement of inertia of rotor and disc
 
-F 	=	coefficient of viscous friction
+F = coefficient of viscous friction
 
-$T_{L}$ 	= 	load torque 
-
-$$ K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta} $$
-
-$$ f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0} $$
-
-Then we can write the following equations 
-
-$$ T_{m0}=J\partial{\ddot{\theta}_{0}}+f\partial{\dot{\theta}_{0}}+T_{L}................(2) $$
-
-$$ T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L}.........(3) $$
-
-In view of (1) – (3), the torque equation in incremental notation can be written as:
-
-$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} $$
-
-Hence, the incremental motor transfer function is:
-
-$$ G_{M}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]} $$
-
-$$ =\frac{K_{m}}{s(T_{m}s+1)} $$
-
-where,
-
-$$ K_{m}=\frac{K}{f+f_{0}}, T_{m}= \frac{J}{f+f_{0}} $$
-
-$$ k_{m}  = DC\ gain\ of\ the\ system ,\  T_{m} = Motor\ Time\ Constant $$	
+$$ T_L \ = \ load \ torque $$	
 						
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								
