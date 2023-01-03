@@ -48,9 +48,11 @@ The drag-cup rotor can be described as a special from of squirral-cage rotor in 
 <img alt="" src="./images/eq1.png" style="width:400px;height:300px;">
 </div>	
 
-Let us choose($\dot{\theta}_{0},E_{0}$)be the operating point of the ac motor and consequently expanding the function f(……) about this point we have.
+ $$ Let \ us \ choose (\dot{\theta}_0,E_0) \ be \ the \ operating \ point \ of \ the \ ac \ motor \ and \ consequently \ expanding \ the \ function \ f(……) \ about \ this \ point \ we \ have $$
 
-$$T_{m}=T_{m0}+\frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}(E-E_{0})+\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}(\dot{\theta}-\dot{\theta}_{0}).......(1)$$   
+
+
+$$ T_{m}=T_{m0}+\frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}(E-E_{0})+\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}(\dot{\theta}-\dot{\theta}_{0}).......(1) $$   
 
 Where the higher order terms in the Taylor series expansion are neglected. Let
 
@@ -58,32 +60,32 @@ J =	movement of inertia of rotor and disc
 
 F 	=	coefficient of viscous friction
 
-$T_{L}$ 	= 	load torque
+$T_{L}$ 	= 	load torque 
 
-$$K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta}$$
+$$ K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta} $$
 
-$$f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}$$
+$$ f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0} $$
 
 Then we can write the following equations 
 
-$$T_{m0}=J\partial{\ddot{\theta}_{0}}+f\partial{\dot{\theta}_{0}}+T_{L}................(2)$$
+$$ T_{m0}=J\partial{\ddot{\theta}_{0}}+f\partial{\dot{\theta}_{0}}+T_{L}................(2) $$
 
-$$T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L}.........(3)$$
+$$ T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L}.........(3) $$
 
 In view of (1) – (3), the torque equation in incremental notation can be written as:
 
-$$\Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} $$
+$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} $$
 
 Hence, the incremental motor transfer function is:
 
-$$G_{M}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]}$$
+$$ G_{M}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]} $$
 
-$$=\frac{K_{m}}{s(T_{m}s+1)}$$
+$$ =\frac{K_{m}}{s(T_{m}s+1)} $$
 
 where,
 
-$$K_{m}=\frac{K}{f+f_{0}}, T_{m}= \frac{J}{f+f_{0}}$$
+$$ K_{m}=\frac{K}{f+f_{0}}, T_{m}= \frac{J}{f+f_{0}} $$
 
-$k_{m}$ = DC gain of the system , $T_{m}$= Motor Time Constant	
+$$ k_{m}  = DC\ gain\ of\ the\ system ,\  T_{m} = Motor\ Time\ Constant $$	
 						
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								

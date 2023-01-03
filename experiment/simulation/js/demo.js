@@ -111,7 +111,7 @@ jsPlumb.ready(function () {
 					
 				endpoint3 = {
             anchor: [0.5, 0.5, 0, -1],
-            connectorStyle: { strokeWidth: 3, stroke: "#1BBD4C" },
+            connectorStyle: { strokeWidth: 3, stroke: "black" },
             endpointsOnTop: true,
             isSource: true,
             maxConnections: 100,
@@ -166,44 +166,44 @@ jsPlumb.ready(function () {
 
     // suspend drawing and initialise.
     instance.batch(function () {
-        var e1 = prepare("bd1"),            
+        var e1 = prepare1("bd1"),            
             e2 = prepare("bd2"),
 			e3 = prepare3("bd3"),
             e4 = prepare("bd4"),
 			e5 = prepare3("bd5"),
-			e6 = prepare2("bd6"),
-            e7 = prepare2("bd7"),
-			e8 = prepare2("bd8"),
+			e6 = prepare("bd6"),
+            e7 = prepare("bd7"),
+			e8 = prepare3("bd8"),
 			/*e9 = prepare("bd9"),
             e10 = prepare("bd10"),*/			
-			e11 = prepare1("bd11"),            
-            e12 = prepare2("bd12"),
+			e11 = prepare("bd11"),            
+            e12 = prepare1("bd12"),
 			e13 = prepare("bd13"),
-            e14 = prepare2("bd14"),
-			e15 = prepare2("bd15"),
+            e14 = prepare("bd14"),
+			e15 = prepare3("bd15"),
 			e16 = prepare("bd16"),
             e17 = prepare2("bd17"),
-			e18 = prepare2("bd18"),			
-			e19 = prepare1("bd19"),
+			e18 = prepare1("bd18"),			
+			e19 = prepare3("bd19"),
 			e20 = prepare1("bd20"),
 			e21 = prepare1("bd21"),
-			e22 = prepare1("bd22"),
-			e23 = prepare1("bd23"),
-			e24 = prepare1("bd24"),
-			e25 = prepare1("bd25"),
+			e22 = prepare2("bd22"),
+			e23 = prepare3("bd23"),
+			e24 = prepare2("bd24"),
+			e25 = prepare("bd25"),
 			e26 = prepare1("bd26"),
-			e27 = prepare1("bd27"),
-			e28 = prepare1("bd28"),
+			e27 = prepare2("bd27"),
+			e28 = prepare3("bd28"),
 			e29 = prepare1("bd29"),
 			e30 = prepare1("bd30"),
-			e31 = prepare1("bd31"),
+			e31 = prepare("bd31"),
 			e32 = prepare1("bd32"),
-			e33 = prepare1("bd33"),
-			e34 = prepare1("bd34"),
-			e35 = prepare1("bd35"),
+			e33 = prepare2("bd33"),
+			e34 = prepare3("bd34"),
+			e35 = prepare("bd35"),
 			e36 = prepare1("bd36"),
 			e37 = prepare1("bd37"),
-			e38 = prepare1("bd38");			
+			e38 = prepare3("bd38");			
             /*clearBtn = jsPlumb.getSelector("#anim-clear"),
             addBtn = jsPlumb.getSelector("#add");
 
@@ -996,13 +996,18 @@ jsPlumb.ready(function () {
 
         if (is_connected_1_12 && is_connected_2_11 && is_connected_7_6 && is_connected_8_5 /*&& is_connected_9_3 && is_connected_10_23*/ && is_connected_4_35 && is_connected_14_31 && is_connected_32_18 && is_connected_33_22 && is_connected_34_23 && is_connected_15_19 && is_connected_19_23 && is_connected_16_25 && is_connected_20_26 && is_connected_27_24 && is_connected_28_23 && is_connected_38_23 && !unallowed_connection_present) {
 			
-			  
+			if(document.getElementById('conph').value ==220 || document.getElementById('conph').value ==200 || document.getElementById('conph').value ==180 && document.getElementById('refph').value ==220 ){  
             alert("RIGHT CONNECTION \n START SIMULATION");
+			document.getElementById('red_switch').style['pointer-events'] = "auto";
+			document.getElementById('plot').disabled=false;
+			document.getElementById('table').disabled=false;
+			document.getElementById('tabledlt').disabled=false;
             }
-			/*else if(is_connected_4_16 && is_connected_16_1 && is_connected_1_9 && is_connected_3_5 && is_connected_6_15 && is_connected_18_14 && is_connected_17_7 && is_connected_8_13&& is_connected_12_1 && is_connected_13_2 && is_connected_2_10 && is_connected_11_19 && !unallowed_connection_present) {
-               alert("Parallel connection of R");
+			else if(document.getElementById('conph').value !=220 || document.getElementById('conph').value !=200 || document.getElementById('conph').value !=180 && document.getElementById('refph').value !=220) {
+               alert("set the Control phase voltage and Reference phase voltage properly");
                 
-            } */ 
+            } 
+		}			
 else{
 	alert('wrong connection');
 	

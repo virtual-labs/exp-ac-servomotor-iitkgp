@@ -685,7 +685,7 @@
 	
 }
 .rotateSwheel{
-	animation:MoveUpDowns 1s linear infinite;/*infinite;*/
+	animation:MoveUpDowns 0.5s linear infinite;/*infinite;*/
 	
 }
 @keyframes MoveUpDowns {
