@@ -50,9 +50,8 @@ The drag-cup rotor can be described as a special from of squirral-cage rotor in 
 
  $$ Let \ us \ choose (\dot{\theta}_0,E_0) \ be \ the \ operating \ point \ of \ the \ ac \ motor \ and \ consequently \ expanding \ the \ function \ f(……) \ about \ this \ point \ we \ have $$
 
+$$ T_{m}=T_{m0}+\frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}(E-E_{0})+\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}(\dot{\theta}-\dot{\theta}_{0}).......(1) $$
 
-
-$$ T_{m}=T_{m0}+\frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}(E-E_{0})+\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}(\dot{\theta}-\dot{\theta}_{0}).......(1) $$   
 
 Where the higher order terms in the Taylor series expansion are neglected. Let
 
