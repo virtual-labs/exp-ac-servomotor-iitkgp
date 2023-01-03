@@ -48,9 +48,11 @@ The drag-cup rotor can be described as a special from of squirral-cage rotor in 
 <img alt="" src="./images/eq1.png" style="width:400px;height:300px;">
 </div>	
 
- $$ Let \ us \ choose (\dot{\theta}_0,E_0) \ be \ the \ operating \ point \ of \ the \ ac \ motor \ and \ consequently \ expanding \ the \ function \ f(……) \ about \ this \ point \ we \ have $$
+$$ Let \ us \ choose (\dot{\theta}_0,E_0) \ be \ the \ operating \ point \ of \ the \ ac \ motor \ and \ consequently \ expanding \ the \ function \ f(……) \ about \ this \ point \ we \ have $$
+
 
 $$ T_{m}=T_{m0}+\frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}(E-E_{0})+\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}(\dot{\theta}-\dot{\theta}_{0}).......(1) $$
+
 
 Where the higher order terms in the Taylor series expansion are neglected. Let
 
@@ -58,6 +60,8 @@ J = movement of inertia of rotor and disc
 
 F = coefficient of viscous friction
 
-$$ T_L \ = \ load \ torque $$	
+
+$$ T_L \ = \ load \ torque $$
+
 						
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								
