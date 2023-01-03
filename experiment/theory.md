@@ -63,5 +63,34 @@ F = coefficient of viscous friction
 
 $$ T_L \ = \ load \ torque $$
 
+
+
+$$ K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta} $$
+
+$$ f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0} $$
+
+Then we can write the following equations 
+
+$$ T_{m0}=J\partial{\ddot{\theta}_{0}}+f\partial{\dot{\theta}_{0}}+T_{L}................(2) $$
+
+$$ T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L}.........(3) $$
+
+In view of (1) – (3), the torque equation in incremental notation can be written as:
+
+$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} $$
+
+Hence, the incremental motor transfer function is:
+
+$$ G_{M}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]} $$
+
+$$ =\frac{K_{m}}{s(T_{m}s+1)} $$
+
+where,
+
+$$ K_m =\frac{K}{f+f_{0}}, T_m= \frac{J}{f+f_{0}} $$
+
+$$ k_m  = DC\ gain\ of\ the\ system ,\  T_m = Motor\ Time\ Constant $$
+
+
 						
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								
