@@ -71,9 +71,12 @@ $$ f_0= \frac{ \partial{T_m}}{ \partial{ \dot{ \theta}}} \vert \dot{ \theta}_0 E
 
 Then we can write the following equations 
 
-$$ T_{m0}=J\partial{\ddot{\theta}_{0}}+f\partial{\dot{\theta}_{0}}+T_{L}................(2) $$
 
-$$ T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L}.........(3) $$
+$$ T_{m0}=J \partial{ \ddot{ \theta}_0}+f \partial{ \dot{ \theta}_0}+T_L ................(2) $$
+
+
+$$ T_m= J({ \ddot{ \theta}_0}+ \Delta{ \ddot{ \theta}})+f({ \dot{ \theta}_0} + \Delta{ \dot{ \theta}}) T_L.........(3) $$
+
 
 In view of (1) – (3), the torque equation in incremental notation can be written as:
 
