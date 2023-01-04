@@ -51,7 +51,7 @@ The drag-cup rotor can be described as a special from of squirral-cage rotor in 
 $$ Let \ us \ choose (\dot{\theta}_0,E_0) \ be \ the \ operating \ point \ of \ the \ ac \ motor \ and \ consequently \ expanding \ the \ function \ f(……) \ about \ this \ point \ we \ have $$
 
 
-$$ T_{m}=T_{m0}+\frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}(E-E_{0})+\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}(\dot{\theta}-\dot{\theta}_{0}).......(1) $$
+$$ T_m=T_{m0} + \frac{ \partial{T_m}}{ \partial{E}} \vert  \dot { \theta}_0 E_0 (E-E_0) + \frac{ \partial{T_m}}{ \partial{ \dot{ \theta}}}  \vert  \dot {\theta}_0 E_0 ( \dot{ \theta}- \dot{ \theta}_0).......(1) $$
 
 
 Where the higher order terms in the Taylor series expansion are neglected. Let
@@ -93,4 +93,4 @@ $$ k_m  = DC\ gain\ of\ the\ system ,\  T_m = Motor\ Time\ Constant $$
 
 
 						
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>							
