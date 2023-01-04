@@ -72,7 +72,7 @@ $$ f_0= \frac{ \partial{T_m}}{ \partial{ \dot{ \theta}}} \vert \dot{ \theta}_0 E
 Then we can write the following equations 
 
 
-$$ T_{m0}=J \partial{ \ddot{ \theta}_0}+f \partial{ \dot{ \theta}_0}+T_L ................(2) $$
+$$ T_{m0}=J  \ddot{ \theta}_0 + f \dot{ \theta}_0 + T_L ................(2) $$
 
 
 $$ T_m= J({ \ddot{ \theta}_0}+ \Delta{ \ddot{ \theta}})+f({ \dot{ \theta}_0} + \Delta{ \dot{ \theta}}) T_L.........(3) $$
