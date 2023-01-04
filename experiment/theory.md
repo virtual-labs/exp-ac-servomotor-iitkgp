@@ -64,10 +64,10 @@ F = coefficient of viscous friction
 $$ T_L \ = \ load \ torque $$
 
 
+$$ K = \frac{ \partial{T_m}}{ \partial{E}} \vert \dot{ \theta}_0 E_0 \dot{ \theta} $$
 
-$$ K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta} $$
 
-$$ f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0} $$
+$$ f_0= \frac{ \partial{T_m}}{ \partial{ \dot{ \theta}}} \vert \dot{ \theta}_0 E_0 $$
 
 Then we can write the following equations 
 
