@@ -2,7 +2,7 @@
 
 <div align="center">							
 <img  alt="" src="./images/cktdplant.png" height="400" width="830" >
-<p style="text-align:center">[Fig : Circuit diagram of experimental set-up ]</p>
+<p style="text-align:center">[Fig 1: Circuit diagram of experimental setup]</p>
 </div>
 
 **Steps to perform the simuation**
