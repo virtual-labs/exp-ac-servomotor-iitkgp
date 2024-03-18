@@ -30,6 +30,18 @@
     display: inline-block;
     position: relative;
 }
+
+/*positioning knob dials*/
+
+#dialtick1{
+position:absolute;
+width:50%;
+left:2%;
+top:4%;
+}
+
+
+
 /* css positions for all blue dots ,generating connecting wires */
   #bd1{
     position: absolute;

@@ -7,7 +7,7 @@
 <b>Discipline | <b> Electrical Engineering 
 :--|:--|
 <b> Lab | <b> **Control and Instrumentation Lab**
-<b> Experiment|     <b> **Determination of Incremental Transfer Function of Two-Phase AC Servo Motor and Experiment 3**
+<b> Experiment|     <b> **Determination of the incremental transfer function of an AC Servomotor and Experiment 3**
 
 
 ### About the Experiment 
