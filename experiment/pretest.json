@@ -2,107 +2,109 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Basically what is an AC servo motor?",
+      "question": "1. What is an ac servo motor basically?",
       "answers": {
         "a": "Two phase induction Motor",
-        "b": "DC shunt Motor",
+        "b": "DC Shunt Motor",
         "c": "Hysteresis Motor",
         "d": "DC Compound Motor"
-      },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "One of the basic requirement of this servo motor is that it have to produce high torque at all",
+      "question": "2. One of the basic requirements of the servo motor is that it has to produce high torque at all ______",
       "answers": {
-        "a": "Loads",
+        "a": " Loads",
         "b": "Frequencies",
         "c": "Speed",
         "d": "Voltages"
-      },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen right answer",
-        "d": "You have chosen wrong answer"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "Two stator windings of ac servomotor are oriented _____",
+      "question": "3. Two stator windings of an ac servo motor are oriented _____",
       "answers": {
         "a": "90 degree (mechanical)apart",
         "b": "90 degree (electrical)apart",
         "c": "180 degree (mechanical)apart",
         "d": "180 degree (electrical)apart"
       },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen right answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
-      },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
+    
     {
-      "question": "Servomotor is a closed loop feedback control system.",
-      "answers": {
-        "a": "True",
-        "b": "False"
-        
-      },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer"
-        
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Servomotors are usually rated in ________.",
+      "question": "5. Servo motors are usually rated in ________.",
       "answers": {
         "a": "KW",
         "b": "torque/hour",
         "c": "KVA",
         "d": "Kg/cm"
       },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen right answer"
-      },
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
-
-    {
-      "question": "A servomechanism is a feedback control system used to control",
+	{
+      "question": "6. A servomechanism is a feedback control system used to control",
       "answers": {
         "a": "Position",
         "b": "Velocity",
         "c": "Acceleration",
         "d": "All of the above"
       },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen right answer"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "7. Which component of a servo motor is responsible for providing feedback?",
+      "answers": {
+        "a": "Encoder",
+        "b": "Transistor",
+        "c": "Capacitor",
+        "d": "Diode"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "8. Which of the following is a disadvantage of using a servo motor?",
+      "answers": {
+        "a": "High precision",
+        "b": "Low torque",
+        "c": "Low speed",
+        "d": "Expensive"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
+    },
+	
+	{
+      "question": "9. The servo motor differs from ordinary motor in that it has",
+      "answers": {
+        "a": "Low inertia and high torque",
+        "b": "High inertia and high torque",
+        "c": "Low inertia and low torque",
+        "d": "High inertia and low torque"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "10. Principal drawback of a servo motor is that it",
+      "answers": {
+        "a": "Has low reliability",
+        "b": "Has low starting torque",
+        "c": "Develops commutation problem",
+        "d": "Can handle only light loads"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
-
-
+	
   ]
 }

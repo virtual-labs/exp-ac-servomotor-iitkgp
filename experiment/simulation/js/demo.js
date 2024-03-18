@@ -217,7 +217,7 @@ jsPlumb.ready(function () {
              //instance.connect({ source: e11, target: e19 });
 			 //delete clicked connection
       instance.bind("click", function (conn, originalEvent) {
-           if ( confirm("Delete connection from " + conn.sourceId + " to " + conn.targetId + "?")) {////for clicking on a connection
+           if ( confirm("Delete connection?")) {////for clicking on a connection
                instance.deleteConnection(conn);			  
 			         }	
 
@@ -996,15 +996,15 @@ jsPlumb.ready(function () {
 
         if (is_connected_1_12 && is_connected_2_11 && is_connected_7_6 && is_connected_8_5 /*&& is_connected_9_3 && is_connected_10_23*/ && is_connected_4_35 && is_connected_14_31 && is_connected_32_18 && is_connected_33_22 && is_connected_34_23 && is_connected_15_19 && is_connected_19_23 && is_connected_16_25 && is_connected_20_26 && is_connected_27_24 && is_connected_28_23 && is_connected_38_23 && !unallowed_connection_present) {
 			
-			if(document.getElementById('conph').value ==220 || document.getElementById('conph').value ==200 || document.getElementById('conph').value ==180 && document.getElementById('refph').value ==220 ){  
-            alert("RIGHT CONNECTION \n START SIMULATION");
+			if( document.getElementById('refph').value == 220 ){  
+            alert("RIGHT CONNECTION \n START SIMULATION \n Set Control Phase Voltage to 220 V");
 			document.getElementById('red_switch').style['pointer-events'] = "auto";
 			document.getElementById('plot').disabled=false;
 			document.getElementById('table').disabled=false;
 			document.getElementById('tabledlt').disabled=false;
             }
-			else if(document.getElementById('conph').value !=220 || document.getElementById('conph').value !=200 || document.getElementById('conph').value !=180 && document.getElementById('refph').value !=220) {
-               alert("set the Control phase voltage and Reference phase voltage properly");
+			else if( document.getElementById('refph').value != 220) {
+               alert("Set Reference phase voltage to 220 V");
                 
             } 
 		}			

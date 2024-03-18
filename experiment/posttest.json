@@ -2,194 +2,115 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Two voltage sources of balanced two phase generator produces",
+      "question": "1. Two voltage sources of balanced two phase generator produces",
       "answers": {
         "a": "Inverse Amplitude",
         "b": "Same Amplitude",
         "c": "Random Amplitude",
         "d": "Infinite Amplitude"
       },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen right answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
-      },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "An induction motor is identical to",
-      
+      "question": "2. An induction motor is identical to",
       "answers": {
-        "a": "Asynchronous motor",
-        "b": "D.C. compound motor",
-        "c": " D.C. series motor",
-        "d": "Synchronous motor"
-      },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
+        "a": "Asynchronous Motor ",
+        "b": "DC Compound Motor",
+        "c": "DC Series Motor",
+        "d": "Synchronous Motor"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-
     {
-      "question": "A 3-phase 440 V, 50 Hz induction motor has 4% slip. The frequency of rotor e.m.f. will be",
-      
+      "question": "3. A 3-phase 440 V, 50 Hz induction motor has 4% slip. The frequency of rotor e.m.f. will be",
       "answers": {
-        "a": "200 Hz",
+        "a": "200 Hz ",
         "b": "2 Hz",
-        "c": " 50 Hz",
+        "c": "50 Hz",
         "d": "0.2 Hz"
-      },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen right answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "What will happen if the relative speed between the rotating flux of stator and rotor of the induction motor is zero?",
-      
+      "question": "4. What will happen if the relative speed between the rotating flux of stator and rotor of the induction motor is zero?",
       "answers": {
-        "a": "The slip of the motor will be 5%",
-        "b": "The rotor will run at very high speed",
-        "c": " The rotor will not run",
+        "a": "The slip of the motor will be 5% ",
+        "b": "The rotor will run at very high speed ",
+        "c": "The rotor will not run",
         "d": "The torque produced will be very large"
-      },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen right answer",
-        "d": "You have chosen wrong answer"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "In the squirrel-cage induction motor the rotor slots are usually given slight skew",
-      
+      "question": "5. In the squirrel-cage induction motor the rotor slots are usually given slight skew ___",
       "answers": {
-        "a": "To reduce the magnetic hum and locking tendency of the rotor",
+        "a": "To reduce the magnetic hum and locking tendency of the rotor ",
         "b": "To increase the tensile strength of the rotor bars",
-        "c": " To ensure easy fabrication",
+		"c": "To ensure easy fabrication",
         "d": "None of the above"
-      },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
+        
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "A servo system must have",
-      
+      "question": "6. A servo system must have _____",
       "answers": {
-        "a": "Feedback system",
+        "a": "Feedback system ",
         "b": "Power amplifier to amplify the error",
         "c": "Capacity to control position or its derivative",
         "d": " All of the above"
-      },
-      "explanations": {
-        "a": "You have chosen wrong answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen right answer"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "A linear ac servomotor must have",
-      
+      "question": "7. A linear ac servo motor must have _____",
       "answers": {
-      
-        "a": " High rotor resistance",
-        "b": " A large air gap",
-        "c": "High rotor reactance ",
-        "d": "None"
-      },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
+        "a": "High rotor resistance  ",
+        "b": "A large air gap",
+        "c": "High rotor reactance",
+        "d": " None of the above"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Which one of the following is required for stability of an ac servomotor?",
-      
+      "question": "8. Which one of the following is required for stability of an ac servo motor?",
       "answers": {
-      
-        "a": " A negative slope on the torque-speed curve",
-        "b": " A linearized torque-speed curve",
-        "c": "The ratio of the rotor reactance to rotor resistance should be high ",
-        "d": "The rotor diameter should be less and axial length large"
-      },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
+        "a": "A negative slope on the torque-speed curve ",
+        "b": "A linearized torque-speed curve",
+        "c": "The ratio of the rotor reactance to rotor resistance should be high",
+        "d": "The rotor diameter should be less and axial length large "
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
-    },
-
+    }, 
     {
-      "question": "Consider the following statements regarding A.C. servomotor: i)The torque-speed curve has negative slope,ii)It is sensitive to noise,iii)The rotor has high resistance and low inertia,iv)It has slow acceleration",
-      
+      "question": "9. Which among the following statements are true for an ac servo motor: <br/> i)The torque-speed curve has negative slope<br/> ii)It is sensitive to noise<br/> iii)The rotor has high resistance and low inertia<br/>iv)It has slow acceleration",
       "answers": {
-        "a": " i and iii",
+        "a": " i and iii ",
         "b": "i and ii",
-        "c": " ii and iii  ",
-        "d": "ii and iv"
-      },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
+        "c": "ii and iii ",
+        "d": "ii and iv "
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "For the system of given figure the closed loop transfer function<br/><p style=\"text-align:center\"><img src=\"./images/qm1.png\" style=\"width:450px;height:290px;\"></p>",
-      
+      "question": "10. Which among the following statements are incorrect for an ac servo motor:",
       "answers": {
-        "a": " 20 rad/s",
-        "b": "40 rad/s",
-        "c": " 5.0 rad/s  ",
-        "d": "2.5 rad/s"
+        "a": " It provides high levels of torque at high speed ",
+        "b": " It is affordable and widely available",
+        "c": " Servo motors can work in ac or dc drive",
+        "d": " It can be operated at 80-90% efficiency"
       },
-      "explanations": {
-        "a": "You have chosen right answer ",
-        "b": "You have chosen wrong answer",
-        "c": "You have chosen wrong answer",
-        "d": "You have chosen wrong answer"
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
-
-
-
-
-
-
-
   ]
 }
