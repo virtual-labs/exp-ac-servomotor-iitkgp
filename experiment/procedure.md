@@ -8,14 +8,14 @@
 **Steps to perform the simuation**
 
 
-1. Make wire connections as follows (x-y, drag connecting wire from point x (a blue point) and drop on point y (another blue point)):<br/>
-	   1-12, 2-11, 7-6, 8-5, 4-35, 14-31, 32-18, 33-22, 34-23, 15-19, 19-23, 16-25, 20-26, 27-24, 28-23, 38-23.
+1. Make wire connections as follows (x-y, drag connecting wire from point x (a blue point) and drop on point y (another blue point)):
+1-12, 2-11, 7-6, 8-5, 4-35, 14-31, 32-18, 33-22, 34-23, 15-19, 19-23, 16-25, 20-26, 27-24, 28-23, 38-23.
 
 2. Rotate the 'Reference Phase' variac to provide the reference phase voltage to 220 V. the corresponding box with reference phase variac shows the voltage applied.
-		This will be fixed throughout the experiment. Rotate the 'Control Phase' variac to provide the control phase voltage to 220 V. the corresponding box with control phase variac shows the voltage applied.
+This will be fixed throughout the experiment. Rotate the 'Control Phase' variac to provide the control phase voltage to 220 V. the corresponding box with control phase variac shows the voltage applied.
 
 3. Click on 'Check Connection' button to check whether the wire connections are proper or not. If alert message is shown as 'wrong connection', 
-	   examine the established connections and select the incorrectly linked wire for removal by clicking on it.
+examine the established connections and select the incorrectly linked wire for removal by clicking on it.
 
 4. Click on the red switch to switch on the regulated dc power supply. Rotate the dc supply voltage knob (beside the switch) to increase the voltage value to 4.9 V. The motor will run with no load speed first. The corresponding box above the motor shows the speed value in rpm.
 
