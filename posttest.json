@@ -1,0 +1,116 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Two voltage sources of balanced two phase generator produces",
+      "answers": {
+        "a": "Inverse Amplitude",
+        "b": "Same Amplitude",
+        "c": "Random Amplitude",
+        "d": "Infinite Amplitude"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. An induction motor is identical to",
+      "answers": {
+        "a": "Asynchronous Motor ",
+        "b": "DC Compound Motor",
+        "c": "DC Series Motor",
+        "d": "Synchronous Motor"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. A 3-phase 440 V, 50 Hz induction motor has 4% slip. The frequency of rotor e.m.f. will be",
+      "answers": {
+        "a": "200 Hz ",
+        "b": "2 Hz",
+        "c": "50 Hz",
+        "d": "0.2 Hz"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What will happen if the relative speed between the rotating flux of stator and rotor of the induction motor is zero?",
+      "answers": {
+        "a": "The slip of the motor will be 5% ",
+        "b": "The rotor will run at very high speed ",
+        "c": "The rotor will not run",
+        "d": "The torque produced will be very large"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. In the squirrel-cage induction motor the rotor slots are usually given slight skew ___",
+      "answers": {
+        "a": "To reduce the magnetic hum and locking tendency of the rotor ",
+        "b": "To increase the tensile strength of the rotor bars",
+		"c": "To ensure easy fabrication",
+        "d": "None of the above"
+        
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. A servo system must have _____",
+      "answers": {
+        "a": "Feedback system ",
+        "b": "Power amplifier to amplify the error",
+        "c": "Capacity to control position or its derivative",
+        "d": " All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. A linear ac servo motor must have _____",
+      "answers": {
+        "a": "High rotor resistance  ",
+        "b": "A large air gap",
+        "c": "High rotor reactance",
+        "d": " None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. Which one of the following is required for stability of an ac servo motor?",
+      "answers": {
+        "a": "A negative slope on the torque-speed curve ",
+        "b": "A linearized torque-speed curve",
+        "c": "The ratio of the rotor reactance to rotor resistance should be high",
+        "d": "The rotor diameter should be less and axial length large "
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }, 
+    {
+      "question": "9. Which among the following statements are true for an ac servo motor: <br/> i)The torque-speed curve has negative slope<br/> ii)It is sensitive to noise<br/> iii)The rotor has high resistance and low inertia<br/>iv)It has slow acceleration",
+      "answers": {
+        "a": " i and iii ",
+        "b": "i and ii",
+        "c": "ii and iii ",
+        "d": "ii and iv "
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Which among the following statements are incorrect for an ac servo motor:",
+      "answers": {
+        "a": " It provides high levels of torque at high speed ",
+        "b": " It is affordable and widely available",
+        "c": " Servo motors can work in ac or dc drive",
+        "d": " It can be operated at 80-90% efficiency"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
