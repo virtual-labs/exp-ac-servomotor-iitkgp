@@ -27,7 +27,7 @@ Start with 20 g, then increase the weight by 20 g like 40, 60, 80, 100, 120, 140
 7. After the bubble comes to the center position and the speed of the motor gets changed, enter 1 in the 'Observation Table Number' box(there will be observations for three successive control phase voltages in three different tables, for first one the number entered will be 1. It means the first table will be filled). Click on 'Show Table' button to take observation data.
 Change the weight again (choose the next weight after 20 as said in step 5) and follow steps 5-7.
 
-8.If in any case, incorrect observation is taken mistakenly (ex: after changing the weight if observation is taken too early before the motor speed changes,
+8. If in any case, incorrect observation is taken mistakenly (ex: after changing the weight if observation is taken too early before the motor speed changes,
 then there will be same data in two consecutive rows in a table. That will result in wrong plot), then click on 'Delete Row' button to delete that particular observation table row and take the reading again.
 
 9. After changing the weights upto 200 g with control phase voltage 220 V, bring the current knob to its minimum value and change the control phase voltage to 200 V and repeat the steps 5-7.
