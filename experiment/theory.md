@@ -6,6 +6,7 @@ They have high speed of response and they are made for d.c. as well as for a.c. 
 
 <div align="center">
 <img alt="" src="./images/ckt.png" style="width:400px;height:300px;">
+	
 <b>Fig 1: Schematic representation of a Servomotor</b>
 </div>
 
@@ -19,9 +20,10 @@ A schematic of the two-phase induction motor is shown in fig 2. The motor consis
 The other phase is called the control phase, energized by a voltage (<span style="font-family:'Times New Roman'">E<sub>c</sub></span>) which is 90 degrees out of phase with respect to the voltage of the reference phase. The control phase voltage is usually supplied from a servo amplifier, the voltage has a variable amplitude and polarity. The direction of rotation of the motor reverses when the control phase signal Changes its sign. The rotor is squirrel cage or drag-cup type in structure.
 
 <div align="center">								
-<img class="center img-fluid" alt="" src="./images/2ph_IM.png" ><br/>
+<img class="center img-fluid" alt="" src="./images/2ph_IM.png" >
+	
 <b>Fig 2: Schematic of a Two-Phase Induction Motor</b>
-</div><br/>
+</div>
 
 Unlike a dc motor the torque-speed curve of a two phase induction motor is quite nonlinear. Considering fig 3, as the reference phase voltage is kept fixed,
  the motor torque <i style="font-family:'Bodoni MT'">T<sub>m</sub></i> is a function of the speed and the control phase voltage and is represented by,
@@ -47,12 +49,11 @@ $$ T_m=T_{m0} + \frac{ \partial{T_m}}{ \partial{E}} \vert  \dot { \theta}_0 E_0 
 
 Where the higher order terms in the Taylor series expansion are neglected. Let
 
-J = movement of inertia of rotor and disc
+<i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc
 
-F = coefficient of viscous friction
+<i style="font-family:'Bodoni MT'">f</i> = Coefficient of viscous friction
 
-
-$$ T_L \ = \ load \ torque $$
+<i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque
 
 
 $$ K = \frac{ \partial{T_m}}{ \partial{E}} \vert \dot{ \theta}_0 E_0 \dot{ \theta} $$
