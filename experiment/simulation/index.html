@@ -149,7 +149,7 @@ top:4%;
         <div class="col-md-1"></div><!--First col under 3rd container start& end-->
         <div class="col-md-10"><!--2nd col under 3rd container start-->
             <p class="text-center bg-success"> <a class="nav-link" data-bs-toggle="tab" href="#inst" id="instcontrol" style="background-color:#128BD9"  ><span class=" h3 text-dark"> Instructions </span></a>
-              <ol id="inst" style="display:block;z-index:1;height:190px; left:0px;overflow-y: auto;">
+              <ol id="inst" style="display:block;z-index:1;height:190px; left:0px;overflow-y: auto;text-align:justify">
                
 	   <li>Make wire connections as follows (x-y, drag connecting wire from point x (a blue point) and drop on point y (another blue point)):<br/>
 	   1-12, 2-11, 7-6, 8-5, 4-35, 14-31, 32-18, 33-22, 34-23, 15-19, 19-23, 16-25, 20-26, 27-24, 28-23, 38-23.</li><br/>
@@ -231,7 +231,7 @@ top:4%;
 		<div class="handlep" id="knob1p" onclick="rotate1()"style="width:30%;height:30%;top:33%;left:0%;"></div>
 		<div class="handlen" id="knob1n"onclick="rotate2()" style="width:30%;height:30%;top:33%;left:70%;"></div>			
 		</div> -->
-		<div id="knob1" class="dial"  style=" width:18%;height:34%;top:33%;left:20%;">
+		<div id="knob1" class="dial"  style=" width:18%;height:34%;top:33%;left:20%;pointer-events:none;">
 		<div class="dialhandle" style="width:20%;height:5%;top:85%;left:20%;transform:rotate(304deg)"></div>				
 		</div>
 		
@@ -240,7 +240,7 @@ top:4%;
 		<div class="handlep" id="knob2p" onclick="rotate3()"style="width:30%;height:30%;top:33%;left:0%;"></div>
 		<div class="handlen" id="knob2n"onclick="rotate4()" style="width:30%;height:30%;top:33%;left:70%;"></div>			
 		</div> -->
-		<div id="knob2" class="dial"  style=" width:18%;height:34%;top:34%;left:52%;">
+		<div id="knob2" class="dial"  style=" width:18%;height:34%;top:34%;left:52%;pointer-events:none;">
 		<div class="dialhandle" style="width:20%;height:5%;top:85%;left:20%;transform:rotate(304deg)"></div>				
 		</div>
 		
@@ -249,7 +249,7 @@ top:4%;
 		<div class="handlep" id="knob3p" onclick="rotate5()"style="width:30%;height:30%;top:33%;left:0%;"></div>
 		<div class="handlen" id="knob3n"onclick="rotate6()" style="width:30%;height:30%;top:33%;left:70%;"></div>			
 		</div> -->
-		<div id="knob3" class="dial"  style=" width:18%;height:34%;top:34%;left:73%;">
+		<div id="knob3" class="dial"  style=" width:18%;height:34%;top:34%;left:73%;pointer-events:none;">
 		<div class="dialhandle" style="width:20%;height:5%;top:85%;left:20%;transform:rotate(304deg)"></div>				
 		</div>	
 		
@@ -545,7 +545,7 @@ top:4%;
 			<div class="card" style=" width:100%;background-color:pink" > 
   
 			<span class="card-title bg-light" id="showTF"  onclick="TF()"> Transfer Function</span><br/>
-				<span class="card-text">Enter the value of <i style="font-family:'Times New Roman'">k</i> &nbsp;<input  type="number" id="kgain" value="0"  style="width:15%;text-align:center"></span><br/>
+				<span class="card-text">Enter the value of <i style="font-family:'Times New Roman'">K</i> &nbsp;<input  type="number" id="kgain" value="0"  style="width:15%;text-align:center"></span><br/>
 				<span class="card-text">Enter the value of <i style="font-family:'Times New Roman'">f<sub>0</sub></i> &nbsp;<input  type="number" id="fo" value="0"  style="width:15%;text-align:center"></span><br/>
 				
 				
