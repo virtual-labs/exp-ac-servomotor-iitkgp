@@ -18,7 +18,7 @@ The two phase induction motor is the most important machine which is used as a s
 1- No brushes and slip-rings are used. Thus, less maintenance is required and the motor is rugged and robust in construction.<br>
 2- The motor requires only a simple control amplifier.<br>
 
-<b>Name of Developer | <b> **Prof. Alok Kanti Deb**
+<b>Subject matter expertise | <b> **Prof. Alok Kanti Deb**
 :--|:--|
 <b> Institute | <b>  **Indian Institute of Technology Kharagpur**
 <b> Email id|     <b>  **alokkanti@ee.iitkgp.ac.in**
@@ -29,4 +29,5 @@ The two phase induction motor is the most important machine which is used as a s
 
 SrNo | Name | VLabs Developer or Integration Engineer | Designation | Department| Institute
 :--|:--|:--|:--|:--|:--|
-1 | **Piyali Chattopadhyay** | Developer & Integration | Project Scientist | Department of Electrical Engineering | IIT Kharagpur | 
+1 | **Piyali Chattopadhyay** | Developer | Project Scientist | Department of Electrical Engineering | IIT Kharagpur | 
+2 | **Subhasis Mahata** | Integration Engineer | Senior Project Scientist | Department of Mechanical Engineering | IIT Kharagpur |
