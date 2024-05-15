@@ -7,7 +7,7 @@
 <b>Discipline | <b> Electrical Engineering 
 :--|:--|
 <b> Lab | <b> **Control and Instrumentation Lab**
-<b> Experiment|     <b> **Determination of the incremental transfer function of an AC Servomotor and Experiment 3**
+<b> Experiment|     <b> **Determination of the incremental transfer function of an AC Servomotor**
 
 
 ### About the Experiment 
