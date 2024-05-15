@@ -19,7 +19,7 @@ For low power applications in control system, ac motors are some times used for 
 <div align="center">
 <img class="img-fluid " src="./experiment/images/2ph_IM.png" alt="">
 
-<b>Fig. 1. Block diagram of the Temperature Controller</b>
+<b>Fig. 1. Schematic representation of the Two Phase Induction Motor</b>
 </div>
 
 <b>Subject matter expertise | <b> **Prof. Alok Kanti Deb**
