@@ -7,16 +7,20 @@
 <b>Discipline | <b> Electrical Engineering 
 :--|:--|
 <b> Lab | <b> **Control and Instrumentation Lab**
-<b> Experiment|     <b> **Determination of the incremental transfer function of an AC Servomotor and Experiment 3**
+<b> Experiment|     <b> **Determination of the incremental transfer function of an AC Servomotor**
 
 
 ### About the Experiment 
-An a.c. servomotor is an induction motor with two primary windings mutually displaced in magnetic position from one another by 90 electrical degrees.
-It has low inertia and high-resistance rotor, thus, giving a speed-torque curve that is linear in shape from no load speed to stand-still.</br>
-It is designed for operation with a constant voltage applied to one of the windings , called the fixed phase , while a time-displaced adjustable voltage is impressed on the other winding which is called the control winding.
-The two phase induction motor is the most important machine which is used as a servomotor. This is because:<br>
-1- No brushes and slip-rings are used. Thus, less maintenance is required and the motor is rugged and robust in construction.<br>
-2- The motor requires only a simple control amplifier.<br>
+**Servo motors :**
+
+Servo motors (control motors) are the motors, designed and built for the use in feedback control systems. They have high speed of response and they are made for dc as well as for ac operation. These motors are usually fractional horsepower motors having low efficiency.
+For low power applications in control system, ac motors are some times used for their rugged construction. Most ac motors used in control systems are of the two phase induction type, which are generally rated from a fraction of a watt upto a few hundred watts i.e., fractional horse power. The frequency of the motor is normally rated at 50, 60, 400, 500, or 1000 Hz.
+
+<div align="center">
+<img class="img-fluid " src="./experiment/images/2ph_IM.png" alt="">
+
+<b>Fig. 1. Schematic representation of the Two Phase Induction Motor</b>
+</div>
 
 <b>Subject matter expertise | <b> **Prof. Alok Kanti Deb**
 :--|:--|

@@ -7,7 +7,7 @@ They have high speed of response and they are made for d.c. as well as for a.c. 
 <div align="center">
 <img alt="" src="./images/ckt.png" style="width:400px;height:300px;">
 	
-<b>Fig 1: Schematic representation of a Servomotor</b>
+<b>Fig. 1. Schematic representation of a Servomotor</b>
 </div>
 
 The two phase induction motor is used as a servomotor. This is because:<br/>
@@ -16,16 +16,16 @@ The two phase induction motor is used as a servomotor. This is because:<br/>
 
 2. The motor requires only a simple control amplifier.<br/><br/>
 
-A schematic of the two-phase induction motor is shown in fig 2. The motor consists of a stator with two distributed windings displaced by 90 electrical degrees apart. Under normal operating conditions in control applications, a fixed voltage from a constant voltage source is applied to one phase called the fixed or the reference phase (<span style="font-family:'Times New Roman'">E<sub>ref</sub></span>). 
+A schematic of the two-phase induction motor is shown in Fig. 2. The motor consists of a stator with two distributed windings displaced by 90 electrical degrees apart. Under normal operating conditions in control applications, a fixed voltage from a constant voltage source is applied to one phase called the fixed or the reference phase (<span style="font-family:'Times New Roman'">E<sub>ref</sub></span>). 
 The other phase is called the control phase, energized by a voltage (<span style="font-family:'Times New Roman'">E<sub>c</sub></span>) which is 90 degrees out of phase with respect to the voltage of the reference phase. The control phase voltage is usually supplied from a servo amplifier, the voltage has a variable amplitude and polarity. The direction of rotation of the motor reverses when the control phase signal Changes its sign. The rotor is squirrel cage or drag-cup type in structure.
 
 <div align="center">								
 <img class="center img-fluid" alt="" src="./images/2ph_IM.png" >
 	
-<b>Fig 2: Schematic of a Two-Phase Induction Motor</b>
+<b>Fig. 2. Schematic of a Two-Phase Induction Motor</b>
 </div>
 
-Unlike a dc motor the torque-speed curve of a two phase induction motor is quite nonlinear. Considering fig 3, as the reference phase voltage is kept fixed,
+Unlike a dc motor the torque-speed curve of a two phase induction motor is quite nonlinear. Considering Fig 3, as the reference phase voltage is kept fixed,
  the motor torque <i style="font-family:'Bodoni MT'">T<sub>m</sub></i> is a function of the speed and the control phase voltage and is represented by,
 
 $$T_m = f ( \dot{\theta} , E  )...(1)$$
@@ -34,7 +34,7 @@ $$where, \ \dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$
 
 <div align="center">
 <img alt="" src="./images/eq1.png" class="img-fluid"><br/>
-<b>Fig 3: Speed-Torque characteristics of an ac Servomotor</b>
+<b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
 </div><br/>	<br/>
 
 
@@ -91,12 +91,12 @@ $$K = \frac{Change \ in \ torque \ in \ N-m}{Change \ in \ control \ phase \ vol
 $$f_0 = \frac{Change \ in \ torque \ in \ N-m}{Change \ in \ speed \ (  \ rad/sec \ )} \ at \ constant \ control \ phase \ voltage \ E \ ( \ volt \ )$$
 
 
-For linear analysis the torque – speed curves of a two phase induction motor are approximated by straight lines, as shown in fig 4.<br/> 
+For linear analysis the torque – speed curves of a two phase induction motor are approximated by straight lines, as shown in Fig. 4.<br/> 
 
 <br/>
 <div align="center">
 <img alt="" src="./images/eq3.png" class="img-fluid"><br/>
-<b>Fig 4: Linear analysis of the torque – speed curves of a two phase induction motor</b>
+<b>Fig. 4. Linear analysis of the torque – speed curves of a two phase induction motor</b>
 </div><br/>
 
 
@@ -105,10 +105,10 @@ For linear analysis the torque – speed curves of a two phase induction motor a
 
 <div align="center">
 <img alt="" src="./images/fig5.png" class="img-fluid"><br/>
-<b>Fig 5: Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i></b>
+<b>Fig. 5. Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i></b>
 </div><br/>
 
-Choose an operating point from the torque vs. speed graph, obtained from experiment. Let us consider operating point as (<i style="font-family:'Times New Roman'">A</i> gm-cm, <i style="font-family:'Times New Roman'">B</i> rad/sec) in fig 5 for
+Choose an operating point from the torque vs. speed graph, obtained from experiment. Let us consider operating point as (<i style="font-family:'Times New Roman'">A</i> gm-cm, <i style="font-family:'Times New Roman'">B</i> rad/sec) in Fig. 5 for
 control phase voltage 180 V. <i style="font-family:'Times New Roman'">C</i> is the torque at constant speed <i style="font-family:'Times New Roman'">B</i> rad/sec for control voltage of 200 V.
 
 so,
