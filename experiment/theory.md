@@ -84,7 +84,7 @@ where,
 
 $$ K_m =\frac{K}{f+f_{0}}, T_m= \frac{J}{f+f_{0}} $$
 
-$$ k_m  = DC\ gain\ of\ the\ system ,\  T_m = Motor\ Time\ Constant $$
+<i style="font-family:'Bodoni MT'">K<sub>m</sub></i>  = DC gain of the system,  <i style="font-family:'Bodoni MT'"><span style="font-size:18px;">&tau;</span><sub>m</sub></i> = Motor Time Constant
 
 $$K = \frac{Change \ in \ torque \ in \ N-m}{Change \ in \ control \ phase \ voltage \ E \ ( \ volt \ )} \ at \ constant \ speed \ in \ rad/sec$$
 
