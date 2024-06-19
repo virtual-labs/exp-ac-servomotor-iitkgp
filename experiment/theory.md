@@ -28,7 +28,7 @@ The other phase is called the control phase, energized by a voltage (<span style
 Unlike a dc motor the torque-speed curve of a two phase induction motor is quite nonlinear. Considering Fig 3, as the reference phase voltage is kept fixed,
  the motor torque <i style="font-family:'Bodoni MT'">T<sub>m</sub></i> is a function of the speed and the control phase voltage and is represented by,
 
-$$T_m = f ( \dot{\theta} , E  )...(1)$$
+$$T_m = f ( \dot{\theta} , E  ) \tag 1$$
 
 $$where, \ \dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$ 
 
@@ -44,7 +44,7 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
 
-$$ T_m=T_{m0} + \frac{ \partial{T_m}}{ \partial{E}} \vert  \dot { \theta}_0 E_0 (E-E_0) + \frac{ \partial{T_m}}{ \partial{ \dot{ \theta}}}  \vert  \dot {\theta}_0 E_0 ( \dot{ \theta}- \dot{ \theta}_0).......(2) $$
+$$ T_m=T_{m0} + \frac{ \partial{T_m}}{ \partial{E}} \vert  \dot { \theta}_0 E_0 (E-E_0) + \frac{ \partial{T_m}}{ \partial{ \dot{ \theta}}}  \vert  \dot {\theta}_0 E_0 ( \dot{ \theta}- \dot{ \theta}_0) \tag 2 $$
 
 
 Where the higher order terms in the Taylor series expansion are neglected. Let
@@ -64,10 +64,10 @@ $$ f_0= \frac{ \partial{T_m}}{ \partial{ \dot{ \theta}}} \vert \dot{ \theta}_0 E
 Then we can write the following equations 
 
 
-$$ T_{m0}=J  \ddot{ \theta}_0 + f \dot{ \theta}_0 + T_L ................(3) $$
+$$ T_{m0}=J  \ddot{ \theta}_0 + f \dot{ \theta}_0 + T_L \tag 3 $$
 
 
-$$ T_m= J({ \ddot{ \theta}_0}+ \Delta{ \ddot{ \theta}})+f({ \dot{ \theta}_0} + \Delta{ \dot{ \theta}}) T_L.........(4) $$
+$$ T_m= J({ \ddot{ \theta}_0}+ \Delta{ \ddot{ \theta}})+f({ \dot{ \theta}_0} + \Delta{ \dot{ \theta}}) T_L \tag 4 $$
 
 
 In view of (1) – (3), the torque equation in incremental notation can be written as:
