@@ -1,5 +1,5 @@
 # Theory
-**Servomotors:**
+**Servomotors**
 
 Servomotors ( control motors) are motors which are designed and built for use in feedback control systems. 
 They have high speed of response and they are made for d.c. as well as for a.c. operation. These motors usually fractional horsepower motors having low efficiency.
@@ -70,19 +70,19 @@ $$ T_{m0}=J  \ddot{ \theta}_0 + f \dot{ \theta}_0 + T_L \tag 3 $$
 $$ T_m= J({ \ddot{ \theta}_0}+ \Delta{ \ddot{ \theta}})+f({ \dot{ \theta}_0} + \Delta{ \dot{ \theta}}) T_L \tag 4 $$
 
 
-In view of (1) – (3), the torque equation in incremental notation can be written as:
+In view of (2) – (4), the torque equation in incremental notation can be written as:
 
-$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} $$
+$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} \tag{5}$$
 
 Hence, the incremental motor transfer function is:
 
-$$ G_{M}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]} $$
+$$ G_{M}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]} \tag{6}$$
 
-$$ =\frac{K_{m}}{s(T_{m}s+1)} $$
+$$ =\frac{K_{m}}{s(T_{m}s+1)} \tag{7}$$
 
 where,
 
-$$ K_m =\frac{K}{f+f_{0}}, T_m= \frac{J}{f+f_{0}} $$
+$$ K_m =\frac{K}{f+f_{0}}, T_m= \frac{J}{f+f_{0}} \tag{8}$$
 
 <i style="font-family:'Bodoni MT'">K<sub>m</sub></i>  = DC gain of the system,  <i style="font-family:'Bodoni MT'"><span style="font-size:18px;">&tau;</span><sub>m</sub></i> = Motor Time Constant
 
@@ -100,7 +100,7 @@ For linear analysis the torque – speed curves of a two phase induction motor a
 </div><br/>
 
 
-<b>Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i> from graph :</b> 
+<b>Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i> from graph</b> 
 <br/>
 
 <div align="center">
@@ -113,12 +113,12 @@ control phase voltage 180 V. <i style="font-family:'Times New Roman'">C</i> is t
 
 so,
 
-$$K = \frac{(C - A) \times (9.81 \times 10^{-5})}{(200 - 180)} \ N-m \ / \ volt$$
+$$K = \frac{(C - A) \times (9.81 \times 10^{-5})}{(200 - 180)} \ N-m \ / \ volt \tag{9}$$
 
 Now consider a slope <i style="font-family:'Times New Roman'">AD</i> for constant control phase voltage 180 V. 
 <br/>Where <i style="font-family:'Times New Roman'">D</i> = torque (gm-cm) for speed <i style="font-family:'Times New Roman'">S</i> rad/sec. Hence,
 
-$$-f_0 = \frac{(D - A)\times (9.81 \times 10^-5)}{(S - B)} \ N-m \ / \ rad/sec$$
+$$-f_0 = \frac{(D - A)\times (9.81 \times 10^-5)}{(S - B)} \ N-m \ / \ rad/sec \tag{10}$$
 
  <span style="font-family:'Bodoni MT'"><i>f</i><sub>0</sub></span> is positive for a negative slope but it is negative for a positive slope.
 
