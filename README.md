@@ -7,14 +7,18 @@
 <b>Discipline | <b> Electrical Engineering 
 :--|:--|
 <b> Lab | <b> **Control and Instrumentation Laboratory**
-<b> Experiment|     <b> **Determination of the incremental transfer function of an AC Servomotor**
+<b> Experiment|     <b> **Determination of the Incremental Transfer Function of an AC Servomotor**
 
 
 ### About the Experiment 
-**Servo motors**
+**Servomotors**
 
-Servo motors (control motors) are the motors, designed and built for the use in feedback control systems. They have high speed of response and they are made for dc as well as for ac operation. These motors are usually fractional horsepower motors having low efficiency.
-For low power applications in control system, ac motors are some times used for their rugged construction. Most ac motors used in control systems are of the two phase induction type, which are generally rated from a fraction of a watt upto a few hundred watts i.e., fractional horse power. The frequency of the motor is normally rated at 50, 60, 400, 500, or 1000 Hz.
+Servomotors (control motors) are the motors, designed and built for the use in feedback control systems.
+They have high speed of response and they are made for dc as well as for ac operation. These motors are usually fractional horsepower motors having low efficiency.<br>
+
+For low power applications in control system, ac motors are some times used for their rugged construction.
+Most ac motors used in control systems are of the two phase induction type, which are generally rated from a fraction of a watt upto a few hundred watts i.e., fractional horse power.
+The frequency of the motor is normally rated at 50, 60, 400, 500, or 1000 Hz.
 
 <div align="center">
 <img class="img-fluid " src="./experiment/images/2ph_IM.png" alt="">

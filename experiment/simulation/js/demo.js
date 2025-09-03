@@ -134,20 +134,21 @@ jsPlumb.ready(function () {
             document.getElementById("animation-demo").appendChild(d);
             var id = '' + ((new Date().getTime()));
             d.setAttribute("id", id);
+			d.setAttribute("name", name);///new add
             var w = screen.width - 162, h = screen.height - 162;
             var x = (0.2 * w) + Math.floor(Math.random() * (0.5 * w));
             var y = (0.2 * h) + Math.floor(Math.random() * (0.6 * h));
             d.style.top = y + 'px';
             d.style.left = x + 'px';
-            return {d: d, id: id};
+            return {d: d, id: id, name: name};
         };
 
     // get a jsPlumb instance, setting some appropriate defaults and a Container.
     instance = jsPlumb.getInstance({
-        DragOptions: { cursor: 'wait', zIndex: 20 },
+        DragOptions: { cursor: 'wait', zIndex: 1 },
         Endpoint: [ "Image", { url: "./images/littledot.png" } ],
-        Connector: [ "Bezier", { curviness:-90 } ],
-        Container: "canvas"
+        Connector: [ "Bezier", { curviness:40 } ],
+		Container: "canvas"
     });
 	
 	/*jsPlumb.connect({ 
@@ -213,13 +214,31 @@ jsPlumb.ready(function () {
             instance.detachEveryConnection();
         });*/
 		
+		///NEW ADDITION TO DISPLAY CONNECTION POINT NUMBERS DURING DELEETE
+		
+		var name1, name2;
+		
 		
              //instance.connect({ source: e11, target: e19 });
 			 //delete clicked connection
       instance.bind("click", function (conn, originalEvent) {
-           if ( confirm("Delete connection?")) {////for clicking on a connection
+		  
+		///NEW ADDED FOR LOOP TO DISPLAY ENDPOINT NAMES DURING DELETE CONNECTION
+		 for(var cpoint =1; cpoint<=38; cpoint++){
+			 if(conn.sourceId=='bd'+cpoint){
+				 name1 = cpoint;
+			 }
+			 if(conn.targetId=='bd'+cpoint){ 
+		  name2= cpoint;
+		 }
+		 } 
+		  
+		 
+           if ( confirm('Delete connection from'+' ' + name1 +' '+ 'to' + ' '+ name2 + '?')) {////for clicking on a connection
                instance.deleteConnection(conn);			  
 			         }	
+					 
+					 //confirm('Delete connection from'+conn.sourceId+'to'+conn.targetId+'?')
 
          /*else if (conn.sourceId=='bd8' && conn.targetId=='bd12') {
 			alert('series R');
