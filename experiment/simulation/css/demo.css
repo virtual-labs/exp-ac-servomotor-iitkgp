@@ -7,17 +7,23 @@
     /* for IE10+ touch devices */
     touch-action:none;
 }
+.jsplumb-container {
+        perspective: 500px; /* Adjust for desired perspective */
+    }
+	
+
 /** JSPLUMB ARTEFACTS **/
 .jtk-overlay {
-    z-index: 51;
+    z-index: 1;/*51;*/
 }
 
 .jtk-endpoint {
-    z-index: 50;
+    z-index: 1;/*50;*/
     cursor: move;
 }
 
 .jtk-connector {
+	/* //transform: rotateX(0deg) rotateY(0deg) rotateZ(5 deg); */
     z-index: 1;
 }
 /*.jtk-demo-canvas {    
