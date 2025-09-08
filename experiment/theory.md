@@ -35,19 +35,22 @@ $$where, \ \dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$
 <div align="center">
 <img alt="" src="./images/eq1.png" class="img-fluid"><br/>
 <b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
-</div><br/>	<br/>
-
+</div>
 
 $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \ the \ ac \ servomotor$$
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-$$T_{m} = T_{m0} + \frac{\partial{T_{m}}}{\partial{E}} \vert \dot{\theta}_{0}E_{0} \ (E-E_{0}) + \frac{\partial{T_{m}}}{\partial{\dot{\theta}}} \vert \dot{\theta}_{0}E_{0} \ (\dot{\theta} - \dot{\theta}_{0}) \tag {2}$$
+$$T_{m} = T_{m0} + \frac{\partial{T_{m}}}{\partial{E}} \vert \dot{\theta}_{0}E_{0} \ (E-E_{0}) + \frac{\partial{T_{m}}}{\partial{\dot{\theta}}} \vert \dot{\theta}_{0}E_{0} \ (\dot{\theta} - \dot{\theta}_{0}) \tag{2}$$
 
 where the higher order terms in the Taylor series expansion are neglected.
+
 Let
+
 <i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc
+
 <i style="font-family:'Bodoni MT'">f</i> =	Coefficient of viscous friction
+
 <i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque 
 
 $$K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta}$$
@@ -56,9 +59,9 @@ $$f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}
 
 Then we can write the following equations
 
-$$T_{m0}=J\partial{\ddot{\theta}_{0}}+f\partial{\dot{\theta}_{0}}+T_{L} \tag 3$$
+$$T_{m0}=J\partial{\ddot{\theta}_{0}}+f\partial{\dot{\theta}_{0}}+T_{L} \tag{3}$$
 
-$$T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L} \tag 4$$
+$$T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L} \tag{4}$$
 
 In view of (2) – (4), the torque equation in incremental notation can be written as:
 
