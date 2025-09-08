@@ -26,12 +26,14 @@ Unlike a DC motor, the torque-speed curve of a two-phase induction motor is quit
 
 $$T_m = f(\dot{\theta}, E) \tag{1}$$
 
+<br/>
 where $\\dot{\\theta}$ = speed and $E$ = control phase voltage.
 
+<br/>
 <div align="center">
 <img alt="" src="./images/eq1.png" class="img-fluid"><br/>
 <b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
-</div>
+</div><br/>
 
 Let's choose $(E_0, \dot{\theta}_0)$ as the operating point of the AC servomotor. Expanding equation (1) about this operating point using a Taylor series expansion, we get:
 
