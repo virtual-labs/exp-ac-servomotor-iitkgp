@@ -41,8 +41,25 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(\dot{\theta} - \dot{\theta}_{0}) 
-\tag{2} $$
+$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(\dot{\theta} - \dot{\theta}_{0}) \tag{2} $$
+
+\[
+T_{m} = T_{m0} 
++ \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} (E - E_{0})
++ \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} (\dot{\theta} - \dot{\theta}_{0})
+\tag{2}
+\]
+
+\[T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} (E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} (\dot{\theta} - \dot{\theta}_{0}) \tag{2} \]
+
+$$
+T_{m} = T_{m0} 
++ \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} (E - E_{0})
++ \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} (\dot{\theta} - \dot{\theta}_{0})
+\tag{2}
+$$
+
+$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} (E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} (\dot{\theta} - \dot{\theta}_{0}) \tag{2} $$
 
 where the higher order terms in the Taylor series expansion are neglected.
 
@@ -119,5 +136,6 @@ $$-f_0 = \frac{(D - A)\times (9.81 \times 10^-5)}{(S - B)} \ N-m \ / \ rad/sec \
 
 Calculate the value of <i style="font-family:'Bodoni MT'">K</i> and <span style="font-family:'Bodoni MT'"><i>f</i><sub>0</sub></span> from graph.
 
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 						
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>							
