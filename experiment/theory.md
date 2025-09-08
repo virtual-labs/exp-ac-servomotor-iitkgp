@@ -33,17 +33,19 @@ where $\\dot{\\theta}$ = speed and $E$ = control phase voltage.
 <b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
 </div>
 
-Let's choose $(E\_0, \\dot{\\theta}\_0)$ as the operating point of the AC servomotor. Expanding equation (1) about this operating point using a Taylor series expansion, we get:
+Based on the image provided, the LaTeX for equations (2) through (5) is not rendering correctly in the HTML output. To fix this, you need to use the proper LaTeX syntax for mathematical expressions.
 
-$$T_m = T_{m0} + \frac{\partial T_{m}}{\partial E}\bigg|_{\dot{\theta}_{0}, E_{0}}(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\bigg|_{\dot{\theta}_{0}, E_{0}}(\dot{\theta} - \dot{\theta}_{0}) \tag{2}$$
+Let's choose $(E_0, \dot{\theta}_0)$ as the operating point of the AC servomotor. Expanding equation (1) about this operating point using a Taylor series expansion, we get:
+
+$$T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\bigg|_{\dot{\theta}_{0}, E_{0}}(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\bigg|_{\dot{\theta}_{0}, E_{0}}(\dot{\theta} - \dot{\theta}_{0}) \tag{2}$$
 
 Here, higher-order terms are neglected.
 
 Let:
 
-  * $J$ = Moment of inertia of the rotor and disc
-  * $f$ = Coefficient of viscous friction
-  * $T\_L$ = Load torque
+* $J$ = Moment of inertia of the rotor and disc
+* $f$ = Coefficient of viscous friction
+* $T_L$ = Load torque
 
 Define the partial derivatives as:
 
@@ -60,6 +62,7 @@ The dynamic torque equation is:
 $$T_m = J(\ddot{\theta}_{0} + \Delta\ddot{\theta}) + f(\dot{\theta}_{0} + \Delta\dot{\theta}) + T_L \tag{4}$$
 
 In view of (2), (3), and (4), the torque equation in incremental notation can be written as:
+
 
 $$\Delta T_m = J\Delta\ddot{\theta} + f\Delta\dot{\theta} = K\Delta E - f_0\Delta\dot{\theta} \tag{5}$$
 
