@@ -109,3 +109,5 @@ The value of $-f\_0$ (the slope) is:
 $$-f_0 = \frac{(T_D - T_A) \times (9.81 \times 10^{-5})}{(S_D - S_A)} \text{ N-m/(rad/sec)} \tag{10}$$
 
 Note that $f\_0$ is positive for a negative slope and negative for a positive slope.
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>	
