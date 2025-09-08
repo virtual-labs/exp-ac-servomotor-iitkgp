@@ -1,8 +1,8 @@
-## **Theory**
-
+# Theory
 **Servomotors**
 
-Servomotors (control motors) are motors designed and built for use in feedback control systems. They have a high speed of response and are made for both DC and AC operation. These motors are typically fractional horsepower motors with low efficiency.
+Servomotors (control motors) are the motors, designed and built for the use in feedback control systems.
+They have high speed of response and they are made for dc as well as for ac operation. These motors are usually fractional horsepower motors having low efficiency.<br>
 
 <div align="center">
 <img alt="" src="./images/ckt.png" style="width:40%;height:30%"><br/>
@@ -10,24 +10,26 @@ Servomotors (control motors) are motors designed and built for use in feedback c
 </div>
 <br/><br/>
 
-The **two-phase induction motor** is often used as a servomotor because:
+The two phase induction motor is used as a servomotor. This is because<br/>
 
-1.  No brushes or slip rings are used, which means less maintenance and a rugged, robust construction.
-2.  The motor requires only a simple control amplifier.
+1. No brushes and slip-rings are used. Thus, less maintenance is required and the motor is rugged and robust in construction.<br/>
 
-A schematic of the two-phase induction motor is shown in Fig. 2. The motor has a stator with two distributed windings displaced by 90 electrical degrees. One winding, the **fixed or reference phase**, is supplied with a constant voltage ($E\_{ref}$). The other winding, the **control phase**, is supplied with a variable amplitude voltage ($E\_c$) that is 90 degrees out of phase with the reference voltage. The direction of rotation reverses when the control phase voltage changes its sign. The rotor is typically of the squirrel cage or drag-cup type.
+2. The motor requires only a simple control amplifier.<br/><br/>
+
+A schematic of the two-phase induction motor is shown in Fig. 2. The motor consists of a stator with two distributed windings displaced by 90 electrical degrees apart. Under normal operating conditions in control applications, a fixed voltage from a constant voltage source is applied to one phase called the fixed or the reference phase (<span style="font-family:'Times New Roman'">E<sub>ref</sub></span>). 
+The other phase is called the control phase, energized by a voltage (<span style="font-family:'Times New Roman'">E<sub>c</sub></span>) which is 90 degrees out of phase with respect to the voltage of the reference phase. The control phase voltage is usually supplied from a servo amplifier, the voltage has a variable amplitude and polarity. The direction of rotation of the motor reverses when the control phase signal Changes its sign. The rotor is squirrel cage or drag-cup type in structure.
 
 <div align="center">								
 <img class="center img-fluid" alt="" src="./images/2ph_IM.png" ><br/>
 <b>Fig. 2. Schematic of a Two-Phase Induction Motor</b>
 </div><br/>
 
-Unlike a DC motor, the torque-speed curve of a two-phase induction motor is quite nonlinear. From Fig. 3, with the reference phase voltage held constant, the motor torque $T\_m$ is a function of both speed and control phase voltage, represented by:
+Unlike a dc motor the torque-speed curve of a two phase induction motor is quite nonlinear. Considering Fig. 3, as the reference phase voltage is kept fixed,
+the motor torque <i style="font-family:'Bodoni MT'">T<sub>m</sub></i> is a function of the speed and the control phase voltage and is represented by,
 
-$$T_m = f(\dot{\theta}, E) \tag{1}$$
+$$T_m = f ( \dot{\theta} , E  ) \tag 1$$
 
-<br/>
-where $\\dot{\\theta}$ = speed and $E$ = control phase voltage.
+$$where, \ \dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$ 
 
 <br/>
 <div align="center">
@@ -35,56 +37,59 @@ where $\\dot{\\theta}$ = speed and $E$ = control phase voltage.
 <b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
 </div><br/>
 
-Let's choose $(E_0, \dot{\theta}_0)$ as the operating point of the AC servomotor. Expanding equation (1) about this operating point using a Taylor series expansion, we get:
+$$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \ the \ ac \ servomotor$$
 
-$$T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\bigg|_{\dot{\theta}_{0}, E_{0}}(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\bigg|_{\dot{\theta}_{0}, E_{0}}(\dot{\theta} - \dot{\theta}_{0}) \tag{2}$$
+Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-Here, higher-order terms are neglected.
-
-Let:
-
-* $J$ = Moment of inertia of the rotor and disc
-* $f$ = Coefficient of viscous friction
-* $T_L$ = Load torque
-
-Define the partial derivatives as:
-
-$$K = \frac{\partial T_{m}}{\partial E}\bigg|_{\dot{\theta}_{0}, E_{0}}$$
-
-$$f_{0} = -\frac{\partial T_{m}}{\partial \dot{\theta}}\bigg|_{\dot{\theta}_{0}, E_{0}}$$
-
-The steady-state torque equation at the operating point is:
-
-$$T_{m0} = J\ddot{\theta}_{0} + f\dot{\theta}_{0} + T_L \tag{3}$$
-
-The dynamic torque equation is:
-
-$$T_m = J(\ddot{\theta}_{0} + \Delta\ddot{\theta}) + f(\dot{\theta}_{0} + \Delta\dot{\theta}) + T_L \tag{4}$$
-
-In view of (2), (3), and (4), the torque equation in incremental notation can be written as:
+$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(\dot{\theta} - \dot{\theta}_{0}) \tag{2} $$
 
 
-$$\Delta T_m = J\Delta\ddot{\theta} + f\Delta\dot{\theta} = K\Delta E - f_0\Delta\dot{\theta} \tag{5}$$
 
-From this, the incremental motor transfer function is:
+$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} (E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} (\dot{\theta} - \dot{\theta}_{0}) \tag{2} $$
 
-$$G_m(s) = \frac{\theta(s)}{E(s)} = \frac{K}{s[Js+(f+f_{0})]} \tag{6}$$
+where the higher order terms in the Taylor series expansion are neglected.
 
-This can be simplified to:
+Let
 
-$$G_m(s) = \frac{K_m}{s(\tau_m s+1)} \tag{7}$$
+<i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc
 
-where,
+<i style="font-family:'Bodoni MT'">f</i> =	Coefficient of viscous friction
 
-$$K_m = \frac{K}{f+f_0} \quad \text{and} \quad \tau_m = \frac{J}{f+f_0} \tag{8}$$
+<i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque 
 
-$K\_m$ is the DC gain of the system, and $\\tau\_m$ is the motor time constant.
+$$K = \frac{\partial{T_{m}}} {\partial{E}} \vert\dot{\theta}_{0} E_{0} \dot{\theta}$$
 
-$K = \\frac{\\text{Change in torque in N-m}}{\\text{Change in control phase voltage } E \\text{ (volts)}}$ at a constant speed in rad/sec.
+$$f_{0} = \frac{\partial{T_{m}}} {\partial{\dot{\theta}}} \vert\dot{\theta}_{0} E_{0}$$
 
-$f\_0 = -\\frac{\\text{Change in torque in N-m}}{\\text{Change in speed (rad/sec)}}$ at a constant control phase voltage $E$ (volts).
+Then we can write the following equations
 
-For linear analysis, the torque-speed curves of a two-phase induction motor are approximated by straight lines, as shown in Fig. 4.
+$$T_{m0} = J \partial\ddot{\theta}_{0} + f \partial\dot{\theta}_{0} + T_{L} \tag{3}$$
+
+$$T_{m} = J(\ddot{\theta}_{0} + \Delta \ddot{\theta}) + f(\dot{\theta}_{0} + \Delta \dot{\theta}) T_{L} \tag{4}$$
+
+In view of (2) – (4), the torque equation in incremental notation can be written as:
+
+$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} \tag 5$$
+
+Hence, the incremental motor transfer function is:
+
+$$ G_{m}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]} \tag 6$$
+
+$$ =\frac{K_{m}}{s(\tau_{m}s+1)} \tag 7$$
+
+
+$$where, \ \ K_{m}=\frac{K}{f+f_{0}}, \tau_{m}= \frac{J}{f+f_{0}} \tag 8$$
+
+<i style="font-family:'Bodoni MT'">K<sub>m</sub></i>  = DC gain of the system,  <i style="font-family:'Bodoni MT'"><span style="font-size:18px;">&tau;</span><sub>m</sub></i> = Motor Time Constant
+
+
+
+$$K = \frac{Change \ in \ torque \ in \ N-m}{Change \ in \ control \ phase \ voltage \ E \ ( \ volt \ )} \ at \ constant \ speed \ in \ rad/sec$$
+
+$$f_0 = \frac{Change \ in \ torque \ in \ N-m}{Change \ in \ speed \ (  \ rad/sec \ )} \ at \ constant \ control \ phase \ voltage \ E \ ( \ volt \ )$$
+
+
+For linear analysis the torque – speed curves of a two phase induction motor are approximated by straight lines, as shown in Fig. 4.<br/> 
 
 <br/>
 <div align="center">
@@ -92,25 +97,31 @@ For linear analysis, the torque-speed curves of a two-phase induction motor are 
 <b>Fig. 4. Linear analysis of the torque – speed curves of a two phase induction motor</b>
 </div><br/>
 
-**Calculation for $K\_m$ and $\\tau\_m$ from a graph**
+
+<b>Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i> from graph </b> 
+<br/>
 
 <div align="center">
 <img alt="" src="./images/fig5.png" class="img-fluid"><br/>
 <b>Fig. 5. Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i></b>
 </div><br/>
 
-Choose an operating point from the experimental torque vs. speed graph. Consider operating point **A** ($T\_A$ gm-cm, $S\_A$ rad/sec) for a control phase voltage of 180 V. Let **C** be the torque at constant speed $S\_A$ rad/sec for a control voltage of 200 V.
+Choose an operating point from the torque vs. speed graph, obtained from experiment. Let us consider operating point as (<i style="font-family:'Times New Roman'">A</i> gm-cm, <i style="font-family:'Times New Roman'">B</i> rad/sec) in fig 5 for
+control phase voltage 180 V. <i style="font-family:'Times New Roman'">C</i> is the torque at constant speed <i style="font-family:'Times New Roman'">B</i> rad/sec for control voltage of 200 V.
 
-The value of $K$ is calculated as:
+so,
 
-$$K = \frac{(C - T_A) \times (9.81 \times 10^{-5})}{(200 - 180)} \text{ N-m/volt} \tag{9}$$
+$$K = \frac{(C - A) \times (9.81 \times 10^{-5})}{(200 - 180)} \ N-m \ / \ volt \tag 9$$
 
-Now, consider the slope of the line **AD** for a constant control phase voltage of 180 V. Let **D** be a point with torque $T\_D$ gm-cm at speed $S\_D$ rad/sec.
+Now consider a slope <i style="font-family:'Times New Roman'">AD</i> for constant control phase voltage 180 V. 
+<br/>Where <i style="font-family:'Times New Roman'">D</i> = torque (gm-cm) for speed <i style="font-family:'Times New Roman'">S</i> rad/sec. Hence,
 
-The value of $-f\_0$ (the slope) is:
+$$-f_0 = \frac{(D - A)\times (9.81 \times 10^-5)}{(S - B)} \ N-m \ / \ rad/sec \tag {10}$$
 
-$$-f_0 = \frac{(T_D - T_A) \times (9.81 \times 10^{-5})}{(S_D - S_A)} \text{ N-m/(rad/sec)} \tag{10}$$
+<span style="font-family:'Bodoni MT'"><i>f</i><sub>0</sub></span> is positive for a negative slope but it is negative for a positive slope.
 
-Note that $f\_0$ is positive for a negative slope and negative for a positive slope.
+Calculate the value of <i style="font-family:'Bodoni MT'">K</i> and <span style="font-family:'Bodoni MT'"><i>f</i><sub>0</sub></span> from graph.
 
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>	
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+						
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>							
