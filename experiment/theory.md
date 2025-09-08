@@ -41,7 +41,8 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-$$T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E} \vert\dot{\theta}_{0} E_{0} \ (E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}} \vert\dot{\theta}_{0} E_{0} \ (\dot{\theta} - \dot{\theta}_{0}) \tag{2}$$
+$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(\dot{\theta} - \dot{\theta}_{0}) 
+\tag{2} $$
 
 where the higher order terms in the Taylor series expansion are neglected.
 
