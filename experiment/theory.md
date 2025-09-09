@@ -42,27 +42,48 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E} \big|{\dot{\theta}_0 E_0} \ (E - E_0) + \frac{\partial T_{m}}{\partial \dot{\theta}} \big|{\dot{\theta}_0 E_0} \ (\dot{\theta} - \dot{\theta}_0) \tag{2}$$
+$$
+T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},E_{0}} (E - E_{0}) 
++ \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},E_{0}} (\dot{\theta} - \dot{\theta}_{0}) 
+\tag{2}
+$$
 
-where the higher order terms in the Taylor series expansion are neglected.<br/>
+where the higher order terms in the Taylor series expansion are neglected.
 
-Let <br/>
+---
 
-<i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc<br/>
+Let  
 
-<i style="font-family:'Bodoni MT'">f</i> =	Coefficient of viscous friction<br/>
+- \( J \) = Moment of inertia of rotor and disc  
+- \( f \) = Coefficient of viscous friction  
+- \( T_{L} \) = Load torque  
 
-<i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque<br/>
+---
 
-$$ K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta}$$
+We define  
 
-$$ f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0}$$
+$$
+K = \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},E_{0}}
+$$
 
-Then we can write the following equations
+$$
+f_{0} = \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},E_{0}}
+$$
 
-$$ T_{m0}=J\ddot{\theta}_{0}+f\dot{\theta}_{0}+T_{L} \tag 3$$
+---
 
-$$ T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L} \tag 4$$
+Then we can write the following equations:
+
+$$
+T_{m0} = J \ddot{\theta}_{0} + f \dot{\theta}_{0} + T_{L} 
+\tag{3}
+$$
+
+$$
+T_{m} = J\left(\ddot{\theta}_{0} + \Delta \ddot{\theta}\right) + f\left(\dot{\theta}_{0} + \Delta \dot{\theta}\right) + T_{L} \tag{4}
+$$
+
+
 
 In view of (2) – (4), the torque equation in incremental notation can be written as:
 
