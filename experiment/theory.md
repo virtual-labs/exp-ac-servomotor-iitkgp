@@ -1,122 +1,312 @@
 # Theory
-**Servomotors**
 
-Servomotors (control motors) are the motors, designed and built for the use in feedback control systems.
-They have high speed of response and they are made for dc as well as for ac operation. These motors are usually fractional horsepower motors having low efficiency.<br>
+<b>Galvanometer</b><br/>
+
+The use of D'Arsonval galvanometer is very common in variety of measuring instruments. The galvanometer is basically used in an instrument for detecting the presence of small
+currents in a circuit or to indicate zero current in applications like bridge circuits. Thus galvanometer has to be very much sensitive.<br/><br/>
+
+<b>Construction</b><br/>
+The construction of  D'Arsonval galvanometer is shown in the Fig. 1.
+<br/><br>
 
 <div align="center">
-<img alt="" src="./images/ckt.png" style="width:40%;height:30%"><br/>
-<span><b>Fig. 1. Schematic representation of a Servomotor</b> </span>
-</div>
+<img class="img-fluid"  src="./images/pcon.png" alt=""><br/>
+<b>Fig. 1. Construction of  D'Arsonval Galvanometer</b>  
+</div><br>
+
+It consists of the following parts,<br/>
+
+<b>1. Moving coil</b><br/>
+
+It is the current carrying element. It is either rectangular or circular in shape and consists of a number of turns of fine wire. This coil is suspended so that it is free to turn about its vertical axis of
+symmetry. It is arranged in a uniform, radial, horizontal magnetic field of a permanent magnet and iron core. The iron core is spherical in shape if the coil is circular but is
+cylindrical if the coil is rectangular. The iron core is used to provide a flux path of low reluctance and therefore to produce strong magnetic field. This increases the deflecting torque and hence the sensitivity of the galvanometer. The length of air gap is about 1.5 mm.
+
 <br/><br/>
 
-The two phase induction motor is used as a servomotor. This is because<br/>
+<b>2. Damping</b><br/>
+There is a damping torque present owing to production of eddy currents in the metal former on which the coil is mounted.
+For effective damping a low resistance is connected across the galvanometer terminals. By adjusting the value of this resistance, damping can be changed and
+critical damping can be achieved.<br/><br/>
 
-1. No brushes and slip-rings are used. Thus, less maintenance is required and the motor is rugged and robust in construction.<br/>
+<b>3. Suspension</b><br/>
+The coil is supported by a flat ribbon suspension which also carries current to the coil. The other current connection in a sensitive galvanometer is a coiled wire. This is called the lower
+suspension which has a negligible torque effect. This type of galvanometer must be levelled carefully so that the coil hangs straight and centrally without rubbing the poles or the soft iron cylinder. 
+In galvanometers which do not require the perfect leveling, taut suspensions with straight flat strips are used, which are kept under tension from both top and the bottom sides. The upper suspension 
+consists of gold or copper wire of nearly 0.0125 or 0.025 mm diameter rolled into the form of a ribbon.<br/><br/>
 
-2. The motor requires only a simple control amplifier.<br/><br/>
+<b>4. Indication</b><br/>
+The suspension carries a small mirror upon which a beam of light is cast through a glass window in the outer brass case surrounding the instrument.
+The beam of light is reflected on the scale upon which the deflection is measured.  The scale is calibrated in mm and usually kept 1 m (1000 mm) away from the mirror as shown in Fig. 2.<br/><br/>
 
-A schematic of the two-phase induction motor is shown in Fig. 2. The motor consists of a stator with two distributed windings displaced by 90 electrical degrees apart. Under normal operating conditions in control applications, a fixed voltage from a constant voltage source is applied to one phase called the fixed or the reference phase (<span style="font-family:'Times New Roman'">E<sub>ref</sub></span>). 
-The other phase is called the control phase, energized by a voltage (<span style="font-family:'Times New Roman'">E<sub>c</sub></span>) which is 90 degrees out of phase with respect to the voltage of the reference phase. The control phase voltage is usually supplied from a servo amplifier, the voltage has a variable amplitude and polarity. The direction of rotation of the motor reverses when the control phase signal Changes its sign. The rotor is squirrel cage or drag-cup type in structure.
-
-<div align="center">								
-<img class="center img-fluid" alt="" src="./images/2ph_IM.png" ><br/>
-<b>Fig. 2. Schematic of a Two-Phase Induction Motor</b>
-</div><br/>
-
-Unlike a dc motor the torque-speed curve of a two phase induction motor is quite nonlinear. Considering Fig. 3, as the reference phase voltage is kept fixed,
-the motor torque <i style="font-family:'Bodoni MT'">T<sub>m</sub></i> is a function of the speed and the control phase voltage and is represented by,
-
-$$T_m = f ( \dot{\theta} , E  ) \tag 1$$
-
-$$where, \ 
-\dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$ 
+<b>5. Zero setting</b><br/>
+A torsion head is provided for the adjustment of the coil position and zero setting.<br/><br/>				
 
 <div align="center">
-<img alt="" src="./images/eq1.png" class="img-fluid"><br/>
-<b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
-</div><br/>	<br/>
+<img class="img-fluid"  src="./images/plant_deflect2.png" alt=""><br>
+<b>Fig. 2.  Measurement of deflection with lamp and scale arrangement </b>          
+</div><br>	
 
-$$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \ the \ ac \ servomotor$$
+<b>Torque Equation</b><br/>
 
-Expanding equation (1) about the operating point with Taylor series expansion we have,
+Fig. 1 shows the parameters involved in the torque equation of a galvanometer.<br/>
 
-$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E} \big|{\dot{\theta}_0 E_0} \ (E - E_0) + \frac{\partial T_{m}}{\partial \dot{\theta}} \big|{\dot{\theta}_0 E_0} \ (\dot{\theta} - \dot{\theta}_0) \tag{2} $$
+Let,<br/>
+<span class="fontCss2">l, r</span> = Length of respectively vertical and horizontal side (width) of coil, m,<br/>
+<span class="fontCss">N</span> = Number of turns in the coil,<br/>
+<span class="fontCss">B</span> = Flux density in the air gap, Wb/m<sup>2</sup>,<br/>
+<span class="fontCss2">i</span> = Current through moving coil, A,<br/>
+<span class="fontCss">K</span> = Spring constant of suspension, Nm/rad,<br/>
+<span class="fontCss">K</span> is known by various names like control constant, restoring constant and stiffness constant.<br/>
 
-where the higher order terms in the Taylor series expansion are neglected.<br/>
+<span class="fontCss">&theta;<sub>F</sub></span> = Final steady state deflection of moving coil, rad.<br/>
 
-Let <br/>
+Force on each side of coil is <span class="fontCss">N. B</span><span class="fontCss2">il sin &alpha;</span><br/>
 
-<i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc<br/>
+where <span class="fontCss2">&alpha;</span> = Angle between direction of magnetic field and the conductor.<br/>
 
-<i style="font-family:'Bodoni MT'">f</i> =	Coefficient of viscous friction<br/>
+The field is radial and, therefore, <span class="fontCss2">&alpha;</span> is 90&deg;<br/>
+Hence, force on each side of coil (<span class="fontCss">F</span><sub><span class="fontCss2">c</span></sub>)<br/>
 
-<i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque<br/> 
+$$F_c = NBil \tag{1}$$
 
-$$ K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta} $$
+Deflecting torque <span class="fontCss">T<sub>d</sub></span> = force &times; distance<br/> 
+    <!-- = <span class="fontCss">NB</span><span class="fontCss2">ilr</span> ...(2)<br/>
+    = <span class="fontCss">NBA</span><span class="fontCss2">i</span> ...(3)<br/> -->
+    $$= NBilr \tag{2}$$
+    $$= NBAi \tag{3}$$
+where <span class="fontCss">A</span> = <span class="fontCss2">lr</span> = area of coil, m<sup>2</sup><br/>
+<span class="fontCss">N, B, A</span> are constants for a galvanometer.
 
-$$ f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0} $$
+Hence deflecting torque (<span class="fontCss">T<sub>d</sub></span>)
 
-Then we can write the following equations 
+$$T_d = G i \tag{4}$$
 
-$$ T_{m0}=J\ddot{\theta}_{0}+f\dot{\theta}_{0}+T_{L} \tag 3$$
+where 
+$$G = NBA = NBlr \tag{5}$$
 
-$$ T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L} \tag 4$$
+<span class="fontCss">G</span> is called the displacement constant of the galvanometer.<br/>
 
-In view of (2) – (4), the torque equation in incremental notation can be written as:
+Controlling torque exerted by the suspension at deflection <span class="fontCss">&theta;<sub>F</sub></span>, is<br/>
 
-$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} \tag 5$$
+$$T_c = K \theta_F \tag{6}$$
 
-Hence, the incremental motor transfer function is:
+For final steady deflection,
 
-$$ G_{m}(s)=\frac{\theta(s)}{E(s)}=\frac{K}{S[Js+(f+f_{0})]} \tag 6$$
+$$T_c = T_d$$
 
-$$ =\frac{K_{m}}{s(\tau_{m}s+1)} \tag 7$$
+or
+
+$$K \theta_F = G i$$
+
+Hence, final steady deflection
+
+$$\theta_F = \frac{G i}{K} \tag{7}$$
+
+If the deflection is measured on a mm scale kept 1 metre away and if <span class="fontCss">&theta;<sub>F</sub></span> is small, the deflection <span class="fontCss2">d</span> (mm) (Fig. 2) is given by :<br/>
+
+<span class="fontCss2">d</span> = Radius &times; Angle turned by the reflected beam<br/>
+Hence,
+
+$$d = 1000 \times 2 \theta_F = 2000 \ \frac{Gi}{K} \tag{8}$$
+
+This is because if the deflection is <span class="fontCss">&theta;<sub>F</sub></span>, the mirror turns through an angle <span class="fontCss">&theta;<sub>F</sub></span> while the reflected beam turns through an angle 2<span class="fontCss">&theta;<sub>F</sub></span>.<br/><br/>
 
 
-$$where, \ \ K_{m}=\frac{K}{f+f_{0}}, \tau_{m}= \frac{J}{f+f_{0}} \tag 8$$
-
-<i style="font-family:'Bodoni MT'">K<sub>m</sub></i>  = DC gain of the system,  <i style="font-family:'Bodoni MT'"><span style="font-size:18px;">&tau;</span><sub>m</sub></i> = Motor Time Constant
 
 
+<b>Instrinsic constants of galvanometer</b><br/>
+Various instrinsic constants of galvanometer are,<br/><br/>
 
-$$K = \frac{Change \ in \ torque \ in \ N-m}{Change \ in \ control \ phase \ voltage \ E \ ( \ volt \ )} \ at \ constant \ speed \ in \ rad/sec$$
+<b>1. Displacement constant (<span class="fontCss">G</span>) :</b> The deflecting torque is given by 
 
-$$f_0 = \frac{Change \ in \ torque \ in \ N-m}{Change \ in \ speed \ (  \ rad/sec \ )} \ at \ constant \ control \ phase \ voltage \ E \ ( \ volt \ )$$
+$$T_d = G i \ (see \ Eqn. \ 4)$$
+
+where <span class="fontCss">G</span> is the displacement constant of the galvanometer and is equal to <span class="fontCss">NB</span><span class="fontCss2">lr</span>. The unit of <span class="fontCss">G</span> is Nm/A.<br/>
+
+<b>2. Constant of inertia (<span class="fontCss">J</span>) :</b> A retarding torque is produced owing to inertia of moving system. This torque is dependent upon the moment of inertia of moving system and the angular acceleration.
+
+$$T_i = J \frac{d^2\theta}{d t^2} \tag{9}$$
+where, <span class="fontCss">J</span> = Moment of inertia of moving system about the axis of rotation, kg-m^2<br/>
+
+<!-- $$\frac{d^2\theta}{d t^2} = Angular \ acceleration$$ -->
+<span class="fontCss2">&theta;</span> = Deflection at any time <span class="fontCss2">t</span><br/>
+
+<span class="fontCss">J</span> is also called the inertia constant.<br/><br/>
+
+<b>3. Damping constant (<span class="fontCss">D</span>) :</b>. Damping is provided by the friction due to motion of the coil in air and also by induced electrical effects if a closed circuit is provided. 
+Damping torque is assumed to be proportional to velocity of the moving system. This is true for electro-magnetic damping and is at least a fair approximation for air damping.
+
+$$T_D = D \frac{d\theta}{d t} \tag{10}$$
+
+where, <span class="fontCss">T<sub>D</sub></span> is damping torque, <span class="fontCss">D</span> is damping constant in Newton-meter/rad s<sup>-1</sup><br/><br/>
 
 
-For linear analysis the torque – speed curves of a two phase induction motor are approximated by straight lines, as shown in Fig. 4.<br/> 
+<b>4. Control constant (<span class="fontCss">K</span>) :</b> A controlling torque is produced due to elasticity of the system which tries to restore the moving system back to its original position.
+
+$$T_c = K \theta \tag{11}$$
+
+where, <span class="fontCss2">T<sub>c</sub></span> is controlling torque, <span class="fontCss">K</span> = control constant or restoring constant in Newton-meter/rad<br/><br/>
+
+<b>Dynamic Behaviour of Galvanometer</b><br/>
+
+<div align="center">
+<img class="img-fluid"  src="./images/torks.png" alt=""><br> 
+<b>Fig. 3. Torque acts in galvanometer motion</b>
+</div><br>
+
+<b>Equation of Motion</b><br/>
+There are four torques acting on the moving system. Deflecting torque, <span class="fontCss">T<sub>d</sub></span>, tries to accelerate the system while inertia torque, <span class="fontCss">T<sub>i</sub></span> 
+damping torque, <span class="fontCss">T<sub>D</sub></span> and the control torque, <span class="fontCss">T<sub>c</sub></span>, try to retard the system.<br/>
+
+Therefore, for any deflection <span class="fontCss">&theta;</span> at any instant <span class="fontCss2">t</span>
+
+
+$$T_i + T_D + T_c = T_d$$		   
+
+$$J \frac{d^2 \theta}{dt^2} + D \frac{d\theta}{dt} + K\theta = Gi \tag{12}$$
+
+
+<br/><br/>The solution of equation 12 has two parts,<br/>
+
+1) Complementary function<br/>
+2) Particular integral.<br/>
+
+The complementary function (C.F.) represents the transient behaviour while particular integral (P.I.) represents the steady state condition i.e. final deflection of the moving system.
+The behaviour of system before it achieves the steady state is transient behaviour. When transient behaviour dissipates, the system settles into its ultimate steady state position.
+<br/><br/>
+
+<b>Complementary function</b><br/>
+
+The auxiliary equation of the differential equation (Eqn. 12) is obtained as,
+
+$$J m^2 + D m + K = 0 \tag{13}$$
+
+The roots of the equation 13 are,
+
+$$m_1 = \frac{-D+\sqrt{D^2 - 4JK}}{2J} , m_2 = \frac{-D-\sqrt{D^2 - 4JK}}{2J}$$
+
+Hence the solution has two exponential terms of power <span class="fontCss">m<sub>1</sub></span>  and <span class="fontCss">m<sub>2</sub></span> <br/>	
+
+$$\theta = A e^{m_1 t} + B e^{m_2 t} \tag{14}$$
+
+where <span class="fontCss">A,B</span> are constants.<br/><br/>
+
+<b>Particular integral</b><br/>
+
+A steady current <span class="fontCss2">i</span> is passed through the galvanometer.<br/>
+Under steady state conditions,
+
+$$\frac{d \theta}{dt}=0 , \frac{d^2 \theta}{dt^2}=0, \theta = \theta_F$$
+
+Putting the above conditions in Eqn. 12, the final steady state deflection is
+
+$$\theta_F = \frac{G i}{K} \tag{15}$$
+
+Thus, the complete solution of differential equation is
+
+$$\theta = A e^{m_1 t} + B e^{m_2 t} + \theta_F \tag{16}$$
+
+
+Now the transient terms may be purely exponential or oscillatory which depends on the nature of roots <span class="fontCss">m<sub>1</sub></span>  and <span class="fontCss">m<sub>2</sub></span>. This defines the various damping conditions of the system.<br/>	
+<br/><br/>
+
+<b>Underdamped motion (<span class="fontCss">D<sup>2</sup> &lt; 4JK</span>)</b><br/>
+
+Both <span class="fontCss">m<sub>1</sub></span>  and <span class="fontCss">m<sub>2</sub></span> are complex conjugates of each other having negative real part.<br/>
+Thus under these conditions the motion is oscillatory. The galvanometer oscillates about its final steady position with decreasing amplitude before finally settling at its final steady position. The 
+galvanometer is underdamped in this case.
+
+$$m_1,m_2 = -\frac{D}{2J} \pm j\frac{\sqrt{4JK - D^2}}{2J} = -\alpha \pm j\omega_d$$
+
+$$D^2 - 4JK \lt 0 $$
+
+In this case solution will be,
+
+$$\theta = \theta_F \ [ 1 - \frac{2\sqrt{J K}}{\sqrt{4JK - D^2}}  e^{\frac{-D}{2J}t}  sin( \omega_d t + tan^{-1} \frac{\sqrt{4JK - D^2}}{D} ) ] \tag{17}$$
+
+where,
+
+$$\omega_d = \frac{\sqrt{4JK - D^2}}{2J}$$
+
+When a current is suddenly passed through the coil of an underdamped galvanometer, the moving system will start from its zero current position and then oscillate about its final steady state position 
+<span class="fontCss">&theta;<sub>F</sub></span>. This oscillation would be an attenuated sinusoidal motion. The angular frequency of the sinusoidal component of this motion is 
+<span class="fontCss">&omega;<sub>d</sub></span>. The frequency of this sinusoidal component (called frequency of damped oscillations) is
+
+$$f_d = \frac{\omega_d}{2 \pi} \tag{18}$$
+
+and the time period is :
+
+$$T_d = \frac{1}{f_d} = \frac{2 \pi}{\omega_d} \tag{19}$$
 
 <br/>
-<div align="center">
-<img alt="" src="./images/eq3.png" class="img-fluid"><br/>
-<b>Fig. 4. Linear analysis of the torque – speed curves of a two phase induction motor</b>
-</div><br/>
+<b>Undamped motion</b><br/>
+The undamped motion of a galvanometer is obtained when there are no damping forces i.e., when <span class="fontCss">D</span> = 0. Such a case is not possible under practical working conditions, but the properties of the 
+undamped galvanometer are used in expressing its motion under actual operating conditions. <br/>
+
+For undamped motion the Angular frequency (<span class="fontCss">&omega;<sub>n</sub></span> (rad/s)), 
+$$\omega_n = \sqrt{\frac{K}{J}} \tag{20}$$
+putting <span class="fontCss">D</span> = 0 in 
+
+$$\frac{\sqrt{4JK - D^2}}{2 J}$$
+
+The frequency of undamped (called natural or free oscillation) is :
+$$f_n = \frac{\omega_n}{2 \pi} = \frac{1}{2 \pi} \sqrt{\frac{K}{J}} \tag{21}$$
+
+and the free period of oscillations is<br/>
+
+$$T_0 = \frac{1}{f_n} = 2 \pi \sqrt{\frac{J}{K}} \tag{22}$$
+
+In this case the solution is 
+
+$$\theta = \theta_F \ (1 - cos \omega_n t) \tag{23}$$
+
+Thus the motion of the undamped galvanometer is an oscillation around <span class="fontCss">&theta;<sub>F</sub></span> with a constant amplitude <span class="fontCss">&theta;<sub>F</sub></span> and a frequency <span class="fontCss2">f<sub>n</sub></span>.
+
+<br/><br/>
+
+<b>Critically damped motion (<span class="fontCss">D<sup>2</sup> = 4JK</span>)</b><br/>
+
+For critical damping, the roots <span class="fontCss">m<sub>1</sub></span> and <span class="fontCss">m<sub>2</sub></span> are equal, real and negative.<br/>
+In this case the transient response is not oscillatory but purely exponential such that the pointer attains the steady state position very quickly.
 
 
-<b>Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i> from graph </b> 
-<br/>
+$$m_1 = m_2 = \frac{-D}{2J}$$
 
-<div align="center">
-<img alt="" src="./images/fig5.png" class="img-fluid"><br/>
-<b>Fig. 5. Calculation for <i style="font-family:'Bodoni MT'">K<sub>m</sub></i> and <i style="font-family:'Bodoni MT'">&tau;<sub>m</sub></i></b>
-</div><br/>
+$$D^2 - 4JK = 0 , D = 2\sqrt{JK}$$
 
-Choose an operating point from the torque vs. speed graph, obtained from experiment. Let us consider operating point as (<i style="font-family:'Times New Roman'">A</i> gm-cm, <i style="font-family:'Times New Roman'">B</i> rad/sec) in fig 5 for
-control phase voltage 180 V. <i style="font-family:'Times New Roman'">C</i> is the torque at constant speed <i style="font-family:'Times New Roman'">B</i> rad/sec for control voltage of 200 V.
+In this case solution is,<br/>
 
-so,
+$$\theta = \theta_F \ [ 1 - e^{-\frac{D}{2J}}t ( 1 + \frac{D}{2J}t )] \tag{24}$$
 
-$$K = \frac{(C - A) \times (9.81 \times 10^{-5})}{(200 - 180)} \ N-m \ / \ volt \tag 9$$
+Now for critical damping<br/>
 
-Now consider a slope <i style="font-family:'Times New Roman'">AD</i> for constant control phase voltage 180 V. 
-<br/>Where <i style="font-family:'Times New Roman'">D</i> = torque (gm-cm) for speed <i style="font-family:'Times New Roman'">S</i> rad/sec. Hence,
+$$D = D_c = 2\sqrt{KJ}$$ 
 
-$$-f_0 = \frac{(D - A)\times (9.81 \times 10^-5)}{(S - B)} \ N-m \ / \ rad/sec \tag {10}$$
+where <span class="fontCss">D<sub>c</sub></span> = damping constant for critical damping.<br/>
 
-<span style="font-family:'Bodoni MT'"><i>f</i><sub>0</sub></span> is positive for a negative slope but it is negative for a positive slope.
+Under critical damping conditions 
 
-Calculate the value of <i style="font-family:'Bodoni MT'">K</i> and <span style="font-family:'Bodoni MT'"><i>f</i><sub>0</sub></span> from graph.
+$$\frac{D}{2J} = \frac{2 \sqrt{K J}}{2 J} = \sqrt{\frac{K}{J}} = \omega_n$$ 
 
-						
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>							
+<b>Over damped motion (<span class="fontCss">D<sup>2</sup> &gt; 4JK</span>)</b><br/>
+
+When the damping is more than the damping for critical case, the motion is called over damped and the roots <span class="fontCss">m<sub>1</sub></span> and <span class="fontCss">m<sub>2</sub></span> are real, unequal and negative.
+For overdamped case the transient response is exponential and non oscillatory. The pointer attains final steady state position 
+<span class="fontCss">&theta;<sub>F</sub></span> exponentially, taking more time than that of critical damping.			
+
+
+In this case solution is,<br/>
+
+$$\theta = \theta_F \ [ 1 + \frac{\zeta + \sqrt{\zeta^2 -1}}{2 \sqrt{\zeta^2 -1}}e^{-\omega_n t (\zeta - \sqrt{\zeta^2 -1})} - \frac{\zeta - \sqrt{\zeta^2 -1}}{2 \sqrt{\zeta^2 -1}}e^{-\omega_n t (\zeta + \sqrt{\zeta^2 -1})} ] \tag{25}$$
+where natural frequency = <span class="fontCss">&omega;<sub>n</sub></span>
+$$\omega_n = \sqrt{\frac{K}{J}}$$
+
+The above expression (Eqn. 23) represents a decaying motion without oscillations or overshoot. However, this motion is usually slow and is not desirable in indicating instruments. 
+The value of <span class="fontCss">&zeta; = D/ D<sub>c</sub></span>.<br/>
+where, <span class="fontCss">D<sub>c</sub></span> = damping constant for critical damping.<br/><br/>
+
+			    
+<link href="./simulation/css/galvano.css" rel="stylesheet">
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								
