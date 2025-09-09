@@ -44,7 +44,7 @@ Expanding equation (1) about the operating point with Taylor series expansion we
 
 $$ T_{m} = T_{m0} + \frac{ \partial T_{m}}{ \partial E} \Big | _{ \dot{ \theta}_{0},E_{0}} (E - E_{0}) + \frac{ \partial T_{m}}{ \partial \dot{ \theta}} \Big | _{ \dot{ \theta}_{0},E_{0}} ( \dot{ \theta} - \dot{ \theta}_{0}) \tag{2}$$
 
-$$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} \tag 5$$
+$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},E_{0}} (E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},E_{0}} (\dot{\theta} - \dot{\theta}_{0}) \tag 5$$
 
 where the higher order terms in the Taylor series expansion are neglected.
 
