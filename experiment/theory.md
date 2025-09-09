@@ -29,43 +29,46 @@ the motor torque <i style="font-family:'Bodoni MT'">T<sub>m</sub></i> is a funct
 
 $$T_m = f ( \dot{\theta} , E  ) \tag 1$$
 
-$$where, \ \dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$ 
+$$where, \ 
+\dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$ 
 
-<br/>
+
 <div align="center">
 <img alt="" src="./images/eq1.png" class="img-fluid"><br/>
 <b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
-</div><br/>
+</div><br/>	<br/>
 
 $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \ the \ ac \ servomotor$$
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} \,(\dot{\theta} - \dot{\theta}_{0}) \tag{2} $$
+$$
+T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E} \big|{\dot{\theta}_0 E_0} \ (E - E_0)
+\;+\;
+\frac{\partial T_{m}}{\partial \dot{\theta}} \big|{\dot{\theta}_0 E_0} \ (\dot{\theta} - \dot{\theta}_0)
+\tag{2}
+$$
+  
 
+where the higher order terms in the Taylor series expansion are neglected.<br/>
 
+Let <br/>
 
-$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},\,E_{0}} (E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},\,E_{0}} (\dot{\theta} - \dot{\theta}_{0}) \tag{2} $$
+<i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc<br/>
 
-where the higher order terms in the Taylor series expansion are neglected.
+<i style="font-family:'Bodoni MT'">f</i> =	Coefficient of viscous friction<br/>
 
-Let
+<i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque<br/> 
 
-<i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc
+$$ K = \frac{\partial{T_{m}}}{\partial{E}}\vert\dot{\theta}_{0}E_{0}\dot{\theta} $$
 
-<i style="font-family:'Bodoni MT'">f</i> =	Coefficient of viscous friction
+$$ f_{0}=\frac{\partial{T_{m}}}{\partial{\dot{\theta}}}\vert\dot{\theta}_{0}E_{0} $$
 
-<i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque 
+Then we can write the following equations 
 
-$$K = \frac{\partial{T_{m}}} {\partial{E}} \vert\dot{\theta}_{0} E_{0} \dot{\theta}$$
+$$ T_{m0}=J\ddot{\theta}_{0}+f\dot{\theta}_{0}+T_{L} \tag 3$$
 
-$$f_{0} = \frac{\partial{T_{m}}} {\partial{\dot{\theta}}} \vert\dot{\theta}_{0} E_{0}$$
-
-Then we can write the following equations
-
-$$T_{m0} = J \partial\ddot{\theta}_{0} + f \partial\dot{\theta}_{0} + T_{L} \tag{3}$$
-
-$$T_{m} = J(\ddot{\theta}_{0} + \Delta \ddot{\theta}) + f(\dot{\theta}_{0} + \Delta \dot{\theta}) T_{L} \tag{4}$$
+$$ T_{m}= J({\ddot{\theta}_{0}}+\Delta{\ddot{\theta}})+f({\dot{\theta}_{0}}+\Delta{\dot{\theta}})T_{L} \tag 4$$
 
 In view of (2) – (4), the torque equation in incremental notation can be written as:
 
@@ -122,6 +125,5 @@ $$-f_0 = \frac{(D - A)\times (9.81 \times 10^-5)}{(S - B)} \ N-m \ / \ rad/sec \
 
 Calculate the value of <i style="font-family:'Bodoni MT'">K</i> and <span style="font-family:'Bodoni MT'"><i>f</i><sub>0</sub></span> from graph.
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 						
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>							
