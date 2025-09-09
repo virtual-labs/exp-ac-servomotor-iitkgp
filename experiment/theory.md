@@ -42,45 +42,10 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-$$ T_{m} = T_{m0} + \frac{ \partial T_{m}}{ \partial E} \Big | _{ \dot{ \theta}_{0},E_{0}} (E - E_{0}) + \frac{ \partial T_{m}}{ \partial \dot{ \theta}} \Big | _{ \dot{ \theta}_{0},E_{0}} ( \dot{ \theta} - \dot{ \theta}_{0}) \tag{2}$$
-
-$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},E_{0}} (E - E_{0}) + \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},E_{0}} (\dot{\theta} - \dot{\theta}_{0}) \tag 5$$
-
-where the higher order terms in the Taylor series expansion are neglected.
-
----
-
-Let  
-
-- \( J \) = Moment of inertia of rotor and disc  
-- \( f \) = Coefficient of viscous friction  
-- \( T_{L} \) = Load torque  
-
----
-
-We define  
-
-$$
-K = \frac{\partial T_{m}}{\partial E}\Big|_{\dot{\theta}_{0},E_{0}}
-$$
-
-$$
-f_{0} = \frac{\partial T_{m}}{\partial \dot{\theta}}\Big|_{\dot{\theta}_{0},E_{0}}
-$$
-
----
-
-Then we can write the following equations:
-
-$$
-T_{m0} = J \ddot{\theta}_{0} + f \dot{\theta}_{0} + T_{L} \tag{3}
-$$
-
-$$
-T_{m} = J\left(\ddot{\theta}_{0} + \Delta \ddot{\theta}\right) + f\left(\dot{\theta}_{0} + \Delta \dot{\theta}\right) + T_{L} \tag{4}
-$$
-
----
+<div align="center">
+<img alt="" src="./images/equ.png" style="width:80%;height:60%"><br/>
+</div>
+<br/><br/>
 
 In view of (2)–(4), the torque equation in incremental notation can be written as:
 
