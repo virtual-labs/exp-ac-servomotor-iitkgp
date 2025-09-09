@@ -32,7 +32,6 @@ $$T_m = f ( \dot{\theta} , E  ) \tag 1$$
 $$where, \ 
 \dot{\theta} = \ speed , \  E = \ control \ phase \ voltage$$ 
 
-
 <div align="center">
 <img alt="" src="./images/eq1.png" class="img-fluid"><br/>
 <b>Fig. 3. Speed-Torque characteristics of an ac Servomotor</b>
@@ -42,13 +41,7 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-$$
-T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E} \big|{\dot{\theta}_0 E_0} \ (E - E_0)
-\;+\;
-\frac{\partial T_{m}}{\partial \dot{\theta}} \big|{\dot{\theta}_0 E_0} \ (\dot{\theta} - \dot{\theta}_0)
-\tag{2}
-$$
-  
+$$ T_{m} = T_{m0} + \frac{\partial T_{m}}{\partial E} \big|{\dot{\theta}_0 E_0} \ (E - E_0) + \frac{\partial T_{m}}{\partial \dot{\theta}} \big|{\dot{\theta}_0 E_0} \ (\dot{\theta} - \dot{\theta}_0) \tag{2} $$
 
 where the higher order terms in the Taylor series expansion are neglected.<br/>
 
