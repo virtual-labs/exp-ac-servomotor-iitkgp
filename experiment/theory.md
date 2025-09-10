@@ -42,11 +42,6 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
-<div align="center">
-<img alt="" src="./images/Eq2.png" style="width:100%;"><br/>
-</div>
-<br/>
-
 $$T_m = T_{m0} + \frac{\partial T_m}{\partial E}\vert \dot{\theta_0}E_0 (E - E_0) + \frac{\partial T_m}{\partial \dot{\theta}}\vert \dot{\theta_0}E_0 (\dot{\theta} - \dot{\theta_0}) \tag{2}$$
 
 where the higher order terms in the Taylor series expansion are neglected.
@@ -58,20 +53,11 @@ Let <br/>
 
 <i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque<br/> 
 
-<div align="center">
-<img alt="" src="./images/Eqs.png" style="width:100%;"><br/>
-</div>
-<br/> 
-
 $$K = \frac{\partial T_m}{\partial E}\vert \dot{\theta_0} E_0 \dot{\theta}$$
 
 $$f_0 = \frac{\partial T_m}{\partial \dot{\theta}}\vert \dot{\theta_0}E_0$$
 
 Then we can write the following equations
-
-<div align="center">
-<img alt="" src="./images/Eq3_4.png" style="width:100%;"><br/>
-</div>
 
 $$T_{m0} = J \ddot{\theta_0} + f \dot{\theta_0} + T_L \tag{3}$$
 
