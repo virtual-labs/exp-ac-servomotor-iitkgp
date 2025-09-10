@@ -48,11 +48,13 @@ Expanding equation (1) about the operating point with Taylor series expansion we
 <br/>
 
 where the higher order terms in the Taylor series expansion are neglected.
-Let  
+Let <br/>
 
-- \( J \) = Moment of inertia of rotor and disc  
-- \( f \) = Coefficient of viscous friction  
-- \( T_{L} \) = Load torque
+<i style="font-family:'Bodoni MT'">J</i> = Moment of inertia of rotor and disc<br/>
+
+<i style="font-family:'Bodoni MT'">f</i> =	Coefficient of viscous friction<br/>
+
+<i style="font-family:'Bodoni MT'">T<sub>L</sub></i> = Load torque<br/> 
 
 <div align="center">
 <img alt="" src="./images/Eqs.png" style="width:100%;"><br/>
