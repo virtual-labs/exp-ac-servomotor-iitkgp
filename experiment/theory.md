@@ -43,9 +43,26 @@ $$Let \ us \ choose \ (E_0,\dot{\theta}_0) \ be \ the \ operating \ point \ of \
 Expanding equation (1) about the operating point with Taylor series expansion we have,
 
 <div align="center">
-<img alt="" src="./images/equ.png" style="width:100%;height:60%"><br/>
+<img alt="" src="./images/Eq2.png" style="width:100%;"><br/>
 </div>
-<br/><br/>
+<br/>
+
+where the higher order terms in the Taylor series expansion are neglected.
+Let  
+
+- \( J \) = Moment of inertia of rotor and disc  
+- \( f \) = Coefficient of viscous friction  
+- \( T_{L} \) = Load torque
+
+<div align="center">
+<img alt="" src="./images/Eqs.png" style="width:100%;"><br/>
+</div>
+<br/> 
+Then we can write the following equations
+
+<div align="center">
+<img alt="" src="./images/Eq3_4.png" style="width:100%;"><br/>
+</div>
 
 In view of (2)–(4), the torque equation in incremental notation can be written as:
 
