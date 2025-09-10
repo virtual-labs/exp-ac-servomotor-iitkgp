@@ -47,6 +47,8 @@ Expanding equation (1) about the operating point with Taylor series expansion we
 </div>
 <br/>
 
+$$T_m = T_{m0} + \frac{\partial T_m}{\partial E}\vert \dot{\theta_0}E_0 (E - E_0) + \frac{\partial T_m}{\partial \dot{\theta}}\vert \dot{\theta_0}E_0 (\dot{\theta} - \dot{\theta_0}) \tag{2}$$
+
 where the higher order terms in the Taylor series expansion are neglected.
 Let <br/>
 
@@ -60,14 +62,22 @@ Let <br/>
 <img alt="" src="./images/Eqs.png" style="width:100%;"><br/>
 </div>
 <br/> 
+
+$$K = \frac{\partial T_m}{\partial E}\vert \dot{\theta_0} E_0 \dot{\theta}$$
+
+$$f_0 = \frac{\partial T_m}{\partial \dot{\theta}}\vert \dot{\theta_0}E_0$$
+
 Then we can write the following equations
 
 <div align="center">
 <img alt="" src="./images/Eq3_4.png" style="width:100%;"><br/>
 </div>
 
-In view of (2)–(4), the torque equation in incremental notation can be written as:
+$$T_{m0} = J \ddot{\theta_0} + f \dot{\theta_0} + T_L \tag{3}$$
 
+$$T_m = J(\ddot{\theta_0} + \Delta \ddot{\theta_0}) + f(\dot{\theta_0} + \Delta \dot{\theta_0}) T_L \tag{4}$$
+
+In view of (2)–(4), the torque equation in incremental notation can be written as:
 
 $$ \Delta{T_{m}} =J\Delta{\ddot{\theta}}+ f\Delta{\dot{\theta}}=K\Delta{E}-f_{0}\Delta{\dot{\theta}} \tag 5$$
 
