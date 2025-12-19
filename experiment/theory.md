@@ -1,6 +1,6 @@
 # Theory
 **Servomotors**
-
+............
 Servomotors (control motors) are the motors, designed and built for the use in feedback control systems.
 They have high speed of response and they are made for dc as well as for ac operation. These motors are usually fractional horsepower motors having low efficiency.<br>
 
